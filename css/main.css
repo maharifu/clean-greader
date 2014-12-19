@@ -160,7 +160,7 @@
 
 /* font */
 * {
-  font-size: 12px;
+  font-size: 14px;
   font-family: arial, sans-serif !important; }
 
 /* links */
@@ -201,7 +201,6 @@ body#ttrssPrefs {
   overflow: hidden; }
 
 #main {
-  max-width: 1140px;
   margin: 0 auto; }
 
 /***********

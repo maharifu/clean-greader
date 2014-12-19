@@ -16,3 +16,7 @@ node_modules/
 .Trash-1000
 
 /sftp-config.json
+
+# VIM temp files #
+##################
+*.swp
