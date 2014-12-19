@@ -198,6 +198,9 @@ body {
 .attachments {
   display: none; }
 
+#headlines-spacer {
+  margin: 30px; }
+
 /*********
   * MAIN *
   *********/
