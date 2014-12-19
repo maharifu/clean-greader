@@ -194,6 +194,10 @@ body {
   background: #fff;
   padding: 8px; }
 
+/* remove attachments */
+.attachments {
+  display: none; }
+
 /*********
   * MAIN *
   *********/

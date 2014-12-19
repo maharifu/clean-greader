@@ -55,7 +55,10 @@ body { background: $clr-bg-passive; }
   padding: $content-padding;
 }
 
-
+/* remove attachments */
+.attachments {
+  display: none;
+}
 
 /*********
   * MAIN *
