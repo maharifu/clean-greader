@@ -175,7 +175,9 @@
 
 /* article content */
 .claro .cdm.active .cdmContent .cdmContentInner,
-.claro .cdm.expanded .cdmContent .cdmContentInner {
+.claro .cdm.expanded .cdmContent .cdmContentInner,
+.claro .cdm.active .cdmContent .cdmIntermediate,
+.claro .cdm.expanded .cdmContent .cdmIntermediate {
   display: block;
   padding: 0 $content-padding 0 $content-padding-to-header;
 

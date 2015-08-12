@@ -67,10 +67,9 @@
 **/
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../font/FontAwesome.otf') format('opentype');
+  src: url("../font/FontAwesome.otf") format("opentype");
   font-weight: normal;
   font-style: normal; }
-
 /**
   *  File:         _mixins.scss
   *****************************
@@ -98,14 +97,12 @@
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   to {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-
 @-moz-keyframes rotation {
   from {
     -webkit-transform: rotate(0deg);
@@ -113,14 +110,12 @@
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   to {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-
 @-ms-keyframes rotation {
   from {
     -webkit-transform: rotate(0deg);
@@ -128,14 +123,12 @@
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   to {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-
 @keyframes rotation {
   from {
     -webkit-transform: rotate(0deg);
@@ -143,14 +136,12 @@
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   to {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-
 /************
   * GENERAL *
   ************/
@@ -266,16 +257,22 @@ div.dijitSplitterCover {
   * FEED LIST TREE *
   *******************/
 /* disable system and folder icons */
-.claro .dijitTreeIcon.feedIcon:not([src^="feed-icons"]), .claro .dijitFolderClosed, .claro .dijitFolderOpened {
+.claro .dijitTreeIcon.feedIcon:not([src^="feed-icons"]),
+.claro .dijitFolderClosed,
+.claro .dijitFolderOpened {
   display: none; }
 
 /* icon: tree opened + closed */
-.claro .dijitTreeExpandoClosed, .claro .dijitTreeRowHover .dijitTreeExpandoClosed, .claro .dijitTreeExpandoOpened, .claro .dijitTreeRowHover .dijitTreeExpandoOpened {
+.claro .dijitTreeExpandoClosed,
+.claro .dijitTreeRowHover .dijitTreeExpandoClosed,
+.claro .dijitTreeExpandoOpened,
+.claro .dijitTreeRowHover .dijitTreeExpandoOpened {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Ik0gMTAyNCw3MDRxMCwyNiAtMTksNDVsLTQ0OCw0NDhxLTE5LDE5IC00NSwxOXQtNDUtMTlsLTQ0OC00NDhxLTE5LTE5IC0xOS00NXQgMTktNDV0IDQ1LTE5bDg5NiwwIHEgMjYsMCA0NSwxOXQgMTksNDV6IiB0cmFuc2Zvcm09InNjYWxlKDAuMDA4OTI4NTcxNDI4NTcxNDI4IDAuMDA4OTI4NTcxNDI4NTcxNDI4KSI+PC9wYXRoPgogIDwvZz4KPC9zdmc+");
   background-position: 0 0; }
 
 /* icon: tree closed */
-.claro .dijitTreeExpandoClosed, .claro .dijitTreeRowHover .dijitTreeExpandoClosed {
+.claro .dijitTreeExpandoClosed,
+.claro .dijitTreeRowHover .dijitTreeExpandoClosed {
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   -webkit-transform-origin: 40% 40%;
@@ -283,14 +280,16 @@ div.dijitSplitterCover {
 
 /* icon: all articles */
 /* 1.8 */
-.claro .dijitTreeIcon.feedIcon[src$="images/tag.png"], .claro .dijitTreeIcon.feedIcon[src$="images/folder.png"] {
+.claro .dijitTreeIcon.feedIcon[src$="images/tag.png"],
+.claro .dijitTreeIcon.feedIcon[src$="images/folder.png"] {
   display: none; }
-  .claro .dijitTreeIcon.feedIcon[src$="images/tag.png"] + span:before, .claro .dijitTreeIcon.feedIcon[src$="images/folder.png"] + span:before {
+  .claro .dijitTreeIcon.feedIcon[src$="images/tag.png"] + span:before,
+  .claro .dijitTreeIcon.feedIcon[src$="images/folder.png"] + span:before {
     text-align: center;
     width: 16px;
     font-size: 14px;
     display: inline-block;
-    content: "\f00b";
+    content: "";
     font-family: 'FontAwesome' !important;
     font-weight: normal;
     font-variant: normal;
@@ -305,7 +304,8 @@ div.dijitSplitterCover {
     transition: all 0.25s ease-in-out;
     -webkit-transition-delay: 0s;
     transition-delay: 0s; }
-  .claro .dijitTreeIcon.feedIcon[src$="images/tag.png"] + span:hover:before, .claro .dijitTreeIcon.feedIcon[src$="images/folder.png"] + span:hover:before {
+  .claro .dijitTreeIcon.feedIcon[src$="images/tag.png"] + span:hover:before,
+  .claro .dijitTreeIcon.feedIcon[src$="images/folder.png"] + span:hover:before {
     color: #333;
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
@@ -320,7 +320,7 @@ div.dijitSplitterCover {
     width: 16px;
     font-size: 14px;
     display: inline-block;
-    content: "\f06d";
+    content: "";
     font-family: 'FontAwesome' !important;
     font-weight: normal;
     font-variant: normal;
@@ -344,14 +344,16 @@ div.dijitSplitterCover {
 
 /* icon: starred articles */
 /* 1.8 */
-.claro .dijitTreeIcon.feedIcon[src$="images/mark_set.svg"], .claro .dijitTreeIcon.feedIcon[src$="images/star.png"] {
+.claro .dijitTreeIcon.feedIcon[src$="images/mark_set.svg"],
+.claro .dijitTreeIcon.feedIcon[src$="images/star.png"] {
   display: none; }
-  .claro .dijitTreeIcon.feedIcon[src$="images/mark_set.svg"] + span:before, .claro .dijitTreeIcon.feedIcon[src$="images/star.png"] + span:before {
+  .claro .dijitTreeIcon.feedIcon[src$="images/mark_set.svg"] + span:before,
+  .claro .dijitTreeIcon.feedIcon[src$="images/star.png"] + span:before {
     text-align: center;
     width: 16px;
     font-size: 14px;
     display: inline-block;
-    content: "\f02e";
+    content: "";
     font-family: 'FontAwesome' !important;
     font-weight: normal;
     font-variant: normal;
@@ -366,7 +368,8 @@ div.dijitSplitterCover {
     transition: all 0.25s ease-in-out;
     -webkit-transition-delay: 0s;
     transition-delay: 0s; }
-  .claro .dijitTreeIcon.feedIcon[src$="images/mark_set.svg"] + span:hover:before, .claro .dijitTreeIcon.feedIcon[src$="images/star.png"] + span:hover:before {
+  .claro .dijitTreeIcon.feedIcon[src$="images/mark_set.svg"] + span:hover:before,
+  .claro .dijitTreeIcon.feedIcon[src$="images/star.png"] + span:hover:before {
     color: #333;
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
@@ -375,14 +378,16 @@ div.dijitSplitterCover {
 
 /* icon : published articles */
 /* 1.8 */
-.claro .dijitTreeIcon.feedIcon[src$="images/pub_set.svg"], .claro .dijitTreeIcon.feedIcon[src$="images/feed.png"] {
+.claro .dijitTreeIcon.feedIcon[src$="images/pub_set.svg"],
+.claro .dijitTreeIcon.feedIcon[src$="images/feed.png"] {
   display: none; }
-  .claro .dijitTreeIcon.feedIcon[src$="images/pub_set.svg"] + span:before, .claro .dijitTreeIcon.feedIcon[src$="images/feed.png"] + span:before {
+  .claro .dijitTreeIcon.feedIcon[src$="images/pub_set.svg"] + span:before,
+  .claro .dijitTreeIcon.feedIcon[src$="images/feed.png"] + span:before {
     text-align: center;
     width: 16px;
     font-size: 14px;
     display: inline-block;
-    content: "\f09e";
+    content: "";
     font-family: 'FontAwesome' !important;
     font-weight: normal;
     font-variant: normal;
@@ -397,7 +402,8 @@ div.dijitSplitterCover {
     transition: all 0.25s ease-in-out;
     -webkit-transition-delay: 0s;
     transition-delay: 0s; }
-  .claro .dijitTreeIcon.feedIcon[src$="images/pub_set.svg"] + span:hover:before, .claro .dijitTreeIcon.feedIcon[src$="images/feed.png"] + span:hover:before {
+  .claro .dijitTreeIcon.feedIcon[src$="images/pub_set.svg"] + span:hover:before,
+  .claro .dijitTreeIcon.feedIcon[src$="images/feed.png"] + span:hover:before {
     color: #333;
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
@@ -412,7 +418,7 @@ div.dijitSplitterCover {
     width: 16px;
     font-size: 14px;
     display: inline-block;
-    content: "\f01c";
+    content: "";
     font-family: 'FontAwesome' !important;
     font-weight: normal;
     font-variant: normal;
@@ -436,14 +442,16 @@ div.dijitSplitterCover {
 
 /* icon: recently read articles */
 /* 1.8 */
-.claro .dijitTreeIcon.feedIcon[src$="images/recently_read.png"], .claro .dijitTreeIcon.feedIcon[src$="images/time.png"] {
+.claro .dijitTreeIcon.feedIcon[src$="images/recently_read.png"],
+.claro .dijitTreeIcon.feedIcon[src$="images/time.png"] {
   display: none; }
-  .claro .dijitTreeIcon.feedIcon[src$="images/recently_read.png"] + span:before, .claro .dijitTreeIcon.feedIcon[src$="images/time.png"] + span:before {
+  .claro .dijitTreeIcon.feedIcon[src$="images/recently_read.png"] + span:before,
+  .claro .dijitTreeIcon.feedIcon[src$="images/time.png"] + span:before {
     text-align: center;
     width: 16px;
     font-size: 14px;
     display: inline-block;
-    content: "\f017";
+    content: "";
     font-family: 'FontAwesome' !important;
     font-weight: normal;
     font-variant: normal;
@@ -458,7 +466,8 @@ div.dijitSplitterCover {
     transition: all 0.25s ease-in-out;
     -webkit-transition-delay: 0s;
     transition-delay: 0s; }
-  .claro .dijitTreeIcon.feedIcon[src$="images/recently_read.png"] + span:hover:before, .claro .dijitTreeIcon.feedIcon[src$="images/time.png"] + span:hover:before {
+  .claro .dijitTreeIcon.feedIcon[src$="images/recently_read.png"] + span:hover:before,
+  .claro .dijitTreeIcon.feedIcon[src$="images/time.png"] + span:hover:before {
     color: #333;
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
@@ -469,7 +478,8 @@ div.dijitSplitterCover {
   * ARTICLE HEADER ICONS *
   *************************/
 /* checkbox */
-.claro .dijitCheckBox, .claro .dijitCheckBoxIcon {
+.claro .dijitCheckBox,
+.claro .dijitCheckBoxIcon {
   background-image: none;
   font-size: 14px;
   position: relative;
@@ -479,15 +489,18 @@ div.dijitSplitterCover {
   transition: all 0.25s ease-in-out;
   -webkit-transition-delay: 0s;
   transition-delay: 0s; }
-  .claro .dijitCheckBox input, .claro .dijitCheckBoxIcon input {
+  .claro .dijitCheckBox input,
+  .claro .dijitCheckBoxIcon input {
     cursor: pointer; }
-  .claro .dijitCheckBox:before, .claro .dijitCheckBoxIcon:before {
+  .claro .dijitCheckBox:before,
+  .claro .dijitCheckBoxIcon:before {
     position: absolute;
     left: 0;
     color: #d8d8d8; }
-  .claro .dijitCheckBox:before, .claro .dijitCheckBoxIcon:before {
+  .claro .dijitCheckBox:before,
+  .claro .dijitCheckBoxIcon:before {
     display: inline-block;
-    content: "\f096";
+    content: "";
     font-family: 'FontAwesome' !important;
     font-weight: normal;
     font-variant: normal;
@@ -496,11 +509,13 @@ div.dijitSplitterCover {
     speak: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased; }
-  .claro .dijitCheckBox.dijitCheckBoxHover:before, .claro .dijitCheckBoxIcon.dijitCheckBoxHover:before {
+  .claro .dijitCheckBox.dijitCheckBoxHover:before,
+  .claro .dijitCheckBoxIcon.dijitCheckBoxHover:before {
     color: #777; }
-  .claro .dijitCheckBox.dijitCheckBoxChecked:before, .claro .dijitCheckBoxIcon.dijitCheckBoxChecked:before {
+  .claro .dijitCheckBox.dijitCheckBoxChecked:before,
+  .claro .dijitCheckBoxIcon.dijitCheckBoxChecked:before {
     display: inline-block;
-    content: "\f046";
+    content: "";
     font-family: 'FontAwesome' !important;
     font-weight: normal;
     font-variant: normal;
@@ -510,12 +525,15 @@ div.dijitSplitterCover {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     color: #777; }
-  .claro .dijitCheckBox.dijitCheckBoxDisabled input, .claro .dijitCheckBoxIcon.dijitCheckBoxDisabled input {
+  .claro .dijitCheckBox.dijitCheckBoxDisabled input,
+  .claro .dijitCheckBoxIcon.dijitCheckBoxDisabled input {
     cursor: default; }
-  .claro .dijitCheckBox.dijitCheckBoxDisabled:before, .claro .dijitCheckBoxIcon.dijitCheckBoxDisabled:before {
+  .claro .dijitCheckBox.dijitCheckBoxDisabled:before,
+  .claro .dijitCheckBoxIcon.dijitCheckBoxDisabled:before {
     color: #d8d8d8; }
 
-div.cdmHeader img, div#floatingTitle img {
+div.cdmHeader img,
+div#floatingTitle img {
   position: relative;
   left: 1px;
   top: 1px;
@@ -525,24 +543,29 @@ div.cdmHeader img, div#floatingTitle img {
   background-size: 14px 14px;
   background-repeat: no-repeat;
   opacity: 0.153; }
-  div.cdmHeader img:hover, div#floatingTitle img:hover {
+  div.cdmHeader img:hover,
+  div#floatingTitle img:hover {
     opacity: 0.533; }
 
 /* not starred */
-div.cdmHeader img[src*="images/mark_unset."], div#floatingTitle img[src*="images/mark_unset."] {
+div.cdmHeader img[src*="images/mark_unset."],
+div#floatingTitle img[src*="images/mark_unset."] {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Ik0gMTE1MiwyNTZsLTEwMjQsMCBsMCwxMjQyIGwgNDIzLTQwNmwgODktODVsIDg5LDg1bCA0MjMsNDA2bDAsLTEyNDIgek0gMTE2NCwxMjhxIDIzLDAgNDQsOXEgMzMsMTMgNTIuNSw0MXQgMTkuNSw2MmwwLDEyODkgcTAsMzQgLTE5LjUsNjJ0LTUyLjUsNDFxLTE5LDggLTQ0LDhxLTQ4LDAgLTgzLTMybC00NDEtNDI0bC00NDEsNDI0cS0zNiwzMyAtODMsMzNxLTIzLDAgLTQ0LTlxLTMzLTEzIC01Mi41LTQxdC0xOS41LTYybDAsLTEyODkgIHEwLTM0IDE5LjUtNjJ0IDUyLjUtNDFxIDIxLTkgNDQtOWwxMDQ4LDAgeiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwODkyODU3MTQyODU3MTQyOCAwLjAwODkyODU3MTQyODU3MTQyOCkiIGZpbGw9IiMwMDAiPjwvcGF0aD4KICA8L2c+Cjwvc3ZnPg=="); }
 
 /* starred */
-div.cdmHeader img[src*="images/mark_set."], div#floatingTitle img[src*="images/mark_set."] {
+div.cdmHeader img[src*="images/mark_set."],
+div#floatingTitle img[src*="images/mark_set."] {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Ik0gMTE2NCwxMjhxIDIzLDAgNDQsOXEgMzMsMTMgNTIuNSw0MXQgMTkuNSw2MmwwLDEyODkgcTAsMzQgLTE5LjUsNjJ0LTUyLjUsNDFxLTE5LDggLTQ0LDhxLTQ4LDAgLTgzLTMybC00NDEtNDI0bC00NDEsNDI0cS0zNiwzMyAtODMsMzNxLTIzLDAgLTQ0LTlxLTMzLTEzIC01Mi41LTQxdC0xOS41LTYybDAsLTEyODkgcTAtMzQgMTkuNS02MnQgNTIuNS00MXEgMjEtOSA0NC05bDEwNDgsMCB6IiB0cmFuc2Zvcm09InNjYWxlKDAuMDA4OTI4NTcxNDI4NTcxNDI4IDAuMDA4OTI4NTcxNDI4NTcxNDI4KSI+PC9wYXRoPgogIDwvZz4KPC9zdmc+");
   opacity: 0.533; }
 
 /* not published */
-div.cdmHeader img[src*="images/pub_unset."], div#floatingTitle img[src*="images/pub_unset."] {
+div.cdmHeader img[src*="images/pub_unset."],
+div#floatingTitle img[src*="images/pub_unset."] {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Ik0gMzg0LDEzNDRxMCw4MCAtNTYsMTM2dC0xMzYsNTZ0LTEzNi01NnQtNTYtMTM2dCA1Ni0xMzZ0IDEzNi01NnQgMTM2LDU2dCA1NiwxMzZ6TSA4OTYsMTQ2N3EgMiwyOCAtMTcsNDhxLTE4LDIxIC00NywyMWwtMTM1LDAgcS0yNSwwIC00My0xNi41dC0yMC00MS41cS0yMi0yMjkgLTE4NC41LTM5MS41dC0zOTEuNS0xODQuNXEtMjUtMiAtNDEuNS0yMHQtMTYuNS00M2wwLC0xMzUgcTAtMjkgMjEtNDdxIDE3LTE3IDQzLTE3bDUsMCBxIDE2MCwxMyAzMDYsODAuNSB0IDI1OSwxODEuNXEgMTE0LDExMyAxODEuNSwyNTl0IDgwLjUsMzA2ek0gMTQwOCwxNDY5cSAyLDI3IC0xOCw0N3EtMTgsMjAgLTQ2LDIwbC0xNDMsMCBxLTI2LDAgLTQ0LjUtMTcuNXQtMTkuNS00Mi41cS0xMi0yMTUgLTEwMS00MDguNXQtMjMxLjUtMzM2dC0zMzYtMjMxLjV0LTQwOC41LTEwMnEtMjUtMSAtNDIuNS0xOS41dC0xNy41LTQzLjVsMCwtMTQzIHEwLTI4IDIwLTQ2cSAxOC0xOCA0NC0xOGwzLDAgcSAyNjIsMTMgNTAxLjUsMTIwdCA0MjUuNSwyOTQgcSAxODcsMTg2IDI5NCw0MjUuNXQgMTIwLDUwMS41eiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwODkyODU3MTQyODU3MTQyOCAwLjAwODkyODU3MTQyODU3MTQyOCkiPjwvcGF0aD4KICA8L2c+Cjwvc3ZnPg=="); }
 
 /* published */
-div.cdmHeader img[src*="images/pub_set."], div#floatingTitle img[src*="images/pub_set."] {
+div.cdmHeader img[src*="images/pub_set."],
+div#floatingTitle img[src*="images/pub_set."] {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Ik0gMzg0LDEzNDRxMCw4MCAtNTYsMTM2dC0xMzYsNTZ0LTEzNi01NnQtNTYtMTM2dCA1Ni0xMzZ0IDEzNi01NnQgMTM2LDU2dCA1NiwxMzZ6TSA4OTYsMTQ2N3EgMiwyOCAtMTcsNDhxLTE4LDIxIC00NywyMWwtMTM1LDAgcS0yNSwwIC00My0xNi41dC0yMC00MS41cS0yMi0yMjkgLTE4NC41LTM5MS41dC0zOTEuNS0xODQuNXEtMjUtMiAtNDEuNS0yMHQtMTYuNS00M2wwLC0xMzUgcTAtMjkgMjEtNDdxIDE3LTE3IDQzLTE3bDUsMCBxIDE2MCwxMyAzMDYsODAuNSB0IDI1OSwxODEuNXEgMTE0LDExMyAxODEuNSwyNTl0IDgwLjUsMzA2ek0gMTQwOCwxNDY5cSAyLDI3IC0xOCw0N3EtMTgsMjAgLTQ2LDIwbC0xNDMsMCBxLTI2LDAgLTQ0LjUtMTcuNXQtMTkuNS00Mi41cS0xMi0yMTUgLTEwMS00MDguNXQtMjMxLjUtMzM2dC0zMzYtMjMxLjV0LTQwOC41LTEwMnEtMjUtMSAtNDIuNS0xOS41dC0xNy41LTQzLjVsMCwtMTQzIHEwLTI4IDIwLTQ2cSAxOC0xOCA0NC0xOGwzLDAgcSAyNjIsMTMgNTAxLjUsMTIwdCA0MjUuNSwyOTQgcSAxODcsMTg2IDI5NCw0MjUuNXQgMTIwLDUwMS41eiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwODkyODU3MTQyODU3MTQyOCAwLjAwODkyODU3MTQyODU3MTQyOCkiPjwvcGF0aD4KICA8L2c+Cjwvc3ZnPg==");
   opacity: 0.533; }
 
@@ -717,7 +740,7 @@ img[src$="images/score_low.png"] {
 /* notice */
 div.notice span:first-child:before {
   display: inline-block;
-  content: "\f05a";
+  content: "";
   font-family: 'FontAwesome' !important;
   font-weight: normal;
   font-variant: normal;
@@ -734,7 +757,7 @@ div.notice span:first-child img {
 /* warning */
 div.warning span:first-child:before {
   display: inline-block;
-  content: "\f06a";
+  content: "";
   font-family: 'FontAwesome' !important;
   font-weight: normal;
   font-variant: normal;
@@ -915,7 +938,11 @@ img[src="images/plugin.png"] {
     background: #f5f5f5;
     border-width: 0;
     /* system icon (hover) */ }
-    .claro .dijitTreeRow.dijitTreeRowHover .dijitTreeIcon.feedIcon:not([src^="feed-icons"]), .claro .dijitTreeRow.dijitTreeRowHover .dijitFolderClosed, .claro .dijitTreeRow.dijitTreeRowHover .dijitFolderOpened, .claro .dijitTreeRow.dijitTreeRowHover .dijitTreeExpandoClosed, .claro .dijitTreeRow.dijitTreeRowHover .dijitTreeExpandoOpened {
+    .claro .dijitTreeRow.dijitTreeRowHover .dijitTreeIcon.feedIcon:not([src^="feed-icons"]),
+    .claro .dijitTreeRow.dijitTreeRowHover .dijitFolderClosed,
+    .claro .dijitTreeRow.dijitTreeRowHover .dijitFolderOpened,
+    .claro .dijitTreeRow.dijitTreeRowHover .dijitTreeExpandoClosed,
+    .claro .dijitTreeRow.dijitTreeRowHover .dijitTreeExpandoOpened {
       opacity: 0.8;
       -webkit-transition: all 0.25s ease-in-out;
       transition: all 0.25s ease-in-out;
@@ -937,7 +964,7 @@ img[src="images/plugin.png"] {
       color: transparent; }
       .claro .dijitTreeRow img[src="images/indicator_white.gif"] + span:before {
         display: inline-block;
-        content: "\f021";
+        content: "";
         font-family: 'FontAwesome' !important;
         font-weight: normal;
         font-variant: normal;
@@ -950,7 +977,8 @@ img[src="images/plugin.png"] {
         color: #777;
         -webkit-animation: rotation 1s linear infinite;
         animation: rotation 1s linear infinite; }
-  .claro .dijitTreeRow img[src="images/indicator_white.gif"], .claro .dijitTreeRow img[src="images/indicator_tiny.gif"] {
+  .claro .dijitTreeRow img[src="images/indicator_white.gif"],
+  .claro .dijitTreeRow img[src="images/indicator_tiny.gif"] {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Ik0gMjU2LjAwLDAuMDAgQyAxMTYuNjI2LDAuMDAgMy4yNzEsMTExLjM4MSAwLjA3NiwyNDkuOTg3IEMgMy4wMzYsMTI5LjA1NSA5NC45OTIsMzIuMDAgMjA4LjAwLDMyLjAwIEMgMzIyLjg3NSwzMi4wMCA0MTYuMDAsMTMyLjI4OCA0MTYuMDAsMjU2LjAwIEMgNDE2LjAwLDI4Mi41MSA0MzcuNDksMzA0LjAwIDQ2NC4wMCwzMDQuMDAgQyA0OTAuNTEsMzA0LjAwIDUxMi4wMCwyODIuNTEgNTEyLjAwLDI1Ni4wMCBDIDUxMi4wMCwxMTQuNjE1IDM5Ny4zODUsMC4wMCAyNTYuMDAsMC4wMCBaTSAyNTYuMDAsNTEyLjAwIEMgMzk1LjM3NCw1MTIuMDAgNTA4LjcyOSw0MDAuNjE5IDUxMS45MjQsMjYyLjAxMyBDIDUwOC45NjQsMzgyLjk0NSA0MTcuMDA4LDQ4MC4wMCAzMDQuMDAsNDgwLjAwIEMgMTg5LjEyNSw0ODAuMDAgOTYuMDAsMzc5LjcxMiA5Ni4wMCwyNTYuMDAgQyA5Ni4wMCwyMjkuNDkgNzQuNTEsMjA4LjAwIDQ4LjAwLDIwOC4wMCBDIDIxLjQ5LDIwOC4wMCAwLjAwLDIyOS40OSAwLjAwLDI1Ni4wMCBDIDAuMDAsMzk3LjM4NSAxMTQuNjE1LDUxMi4wMCAyNTYuMDAsNTEyLjAwIFoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMzEyNSAwLjAzMTI1KSI+PC9wYXRoPgogIDwvZz4KPC9zdmc+");
     position: relative;
     left: 1px;
@@ -963,7 +991,8 @@ img[src="images/plugin.png"] {
     opacity: 0.533;
     -webkit-animation: rotation 1s linear infinite;
     animation: rotation 1s linear infinite; }
-    .claro .dijitTreeRow img[src="images/indicator_white.gif"]:hover, .claro .dijitTreeRow img[src="images/indicator_tiny.gif"]:hover {
+    .claro .dijitTreeRow img[src="images/indicator_white.gif"]:hover,
+    .claro .dijitTreeRow img[src="images/indicator_tiny.gif"]:hover {
       opacity: 0.8; }
   .claro .dijitTreeRow .counterNode {
     display: inline-block;
@@ -986,7 +1015,11 @@ img[src="images/plugin.png"] {
     margin: 0 8px; }
   .claro .dijitTreeRow .dijitTreeLabel.Unread {
     font-weight: bold; }
-  .claro .dijitTreeRow .dijitTreeIcon.feedIcon:not([src^="feed-icons"]), .claro .dijitTreeRow .dijitFolderClosed, .claro .dijitTreeRow .dijitFolderOpened, .claro .dijitTreeRow .dijitTreeExpandoClosed, .claro .dijitTreeRow .dijitTreeExpandoOpened {
+  .claro .dijitTreeRow .dijitTreeIcon.feedIcon:not([src^="feed-icons"]),
+  .claro .dijitTreeRow .dijitFolderClosed,
+  .claro .dijitTreeRow .dijitFolderOpened,
+  .claro .dijitTreeRow .dijitTreeExpandoClosed,
+  .claro .dijitTreeRow .dijitTreeExpandoOpened {
     padding: 16px 0 0 16px;
     height: 0;
     width: 0;
@@ -1075,7 +1108,8 @@ img[src="images/plugin.png"] {
   color: transparent; }
 
 /* TOLLBAR CARD DOCK - both selector types (simple + menu / wrapper) */
-.claro #headlines-toolbar a, .claro #headlines-toolbar .dijitSelect {
+.claro #headlines-toolbar a,
+.claro #headlines-toolbar .dijitSelect {
   position: relative;
   display: block;
   float: left;
@@ -1109,14 +1143,18 @@ img[src="images/plugin.png"] {
   .claro #headlines-toolbar .dijitSelect .dijitArrowButtonContainer {
     display: none; }
 
-.claro #headlines-toolbar > .holder > .main a, .claro #headlines-toolbar .dijitSelect .dijitButtonContents .dijitButtonText .dijitSelectLabel, .claro #headlines-toolbar > .holder > .r {
+.claro #headlines-toolbar > .holder > .main a,
+.claro #headlines-toolbar .dijitSelect .dijitButtonContents .dijitButtonText .dijitSelectLabel,
+.claro #headlines-toolbar > .holder > .r {
   border: 0px solid transparent;
   border-bottom-width: 2px;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   -webkit-transition-delay: 0s;
   transition-delay: 0s; }
-  .claro #headlines-toolbar > .holder > .main a:hover, .claro #headlines-toolbar .dijitSelect .dijitButtonContents .dijitButtonText .dijitSelectLabel:hover, .claro #headlines-toolbar > .holder > .r:hover {
+  .claro #headlines-toolbar > .holder > .main a:hover,
+  .claro #headlines-toolbar .dijitSelect .dijitButtonContents .dijitButtonText .dijitSelectLabel:hover,
+  .claro #headlines-toolbar > .holder > .r:hover {
     color: #333;
     border: 0px solid #dd4b39;
     border-bottom-width: 2px;
@@ -1124,7 +1162,9 @@ img[src="images/plugin.png"] {
     transition: all 0.25s ease-in-out;
     -webkit-transition-delay: 0s;
     transition-delay: 0s; }
-  .claro #headlines-toolbar > .holder > .main a.r > a:hover, .claro #headlines-toolbar .dijitSelect .dijitButtonContents .dijitButtonText .dijitSelectLabel.r > a:hover, .claro #headlines-toolbar > .holder > .r.r > a:hover {
+  .claro #headlines-toolbar > .holder > .main a.r > a:hover,
+  .claro #headlines-toolbar .dijitSelect .dijitButtonContents .dijitButtonText .dijitSelectLabel.r > a:hover,
+  .claro #headlines-toolbar > .holder > .r.r > a:hover {
     color: #333; }
 
 /* TOOLBAR CARD DOCK - selected items counter */
@@ -1132,19 +1172,25 @@ img[src="images/plugin.png"] {
   display: none !important; }
 
 /* TOOLBAR CARD DOCK - both selector types (pseudo elements) */
-.claro #headlines-toolbar > .holder > .main a:before, .claro #headlines-toolbar .dijitSelect .dijitButtonContents .dijitButtonText .dijitSelectLabel:before, .claro #headlines-toolbar > .holder > .r > a:before {
+.claro #headlines-toolbar > .holder > .main a:before,
+.claro #headlines-toolbar .dijitSelect .dijitButtonContents .dijitButtonText .dijitSelectLabel:before,
+.claro #headlines-toolbar > .holder > .r > a:before {
   content: "";
   display: inline-block;
   position: relative;
   padding-left: 16px; }
-.claro #headlines-toolbar > .holder > .main a:after, .claro #headlines-toolbar .dijitSelect .dijitButtonContents .dijitButtonText .dijitSelectLabel:after, .claro #headlines-toolbar > .holder > .r > a:after {
+.claro #headlines-toolbar > .holder > .main a:after,
+.claro #headlines-toolbar .dijitSelect .dijitButtonContents .dijitButtonText .dijitSelectLabel:after,
+.claro #headlines-toolbar > .holder > .r > a:after {
   content: "";
   display: inline-block;
   position: relative;
   padding-right: 16px; }
 
 /* TOOLBAR CARD DOCK - both selector types (simple + menu / inner) */
-.claro #headlines-toolbar > .holder > .main a, .claro #headlines-toolbar .dijitSelect .dijitButtonContents .dijitButtonText .dijitSelectLabel, .claro #headlines-toolbar > .holder > .r > a:after {
+.claro #headlines-toolbar > .holder > .main a,
+.claro #headlines-toolbar .dijitSelect .dijitButtonContents .dijitButtonText .dijitSelectLabel,
+.claro #headlines-toolbar > .holder > .r > a:after {
   padding-top: 12px;
   padding-bottom: 4px;
   -webkit-transition: all 0.25s ease-in-out;
@@ -1152,7 +1198,9 @@ img[src="images/plugin.png"] {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
   text-align: center; }
-  .claro #headlines-toolbar > .holder > .main a.r, .claro #headlines-toolbar .dijitSelect .dijitButtonContents .dijitButtonText .dijitSelectLabel.r, .claro #headlines-toolbar > .holder > .r > a:after.r {
+  .claro #headlines-toolbar > .holder > .main a.r,
+  .claro #headlines-toolbar .dijitSelect .dijitButtonContents .dijitButtonText .dijitSelectLabel.r,
+  .claro #headlines-toolbar > .holder > .r > a:after.r {
     padding-top: 10px; }
 
 /* rss feed icon */
@@ -1206,15 +1254,18 @@ img[src="images/plugin.png"] {
 /*******************
   * SINGLE ARTICLE *
   *******************/
-.claro #headlines-frame .hl, .claro #headlines-frame .cdm {
+.claro #headlines-frame .hl,
+.claro #headlines-frame .cdm {
   /* article separator */
   border: 1px solid #d8d8d8;
   border-width: 0 1px 1px 0; }
-  .claro #headlines-frame .hl > hr, .claro #headlines-frame .cdm > hr {
+  .claro #headlines-frame .hl > hr,
+  .claro #headlines-frame .cdm > hr {
     display: none; }
 
 /* single article - scroll fix via pseudo element */
-.claro #headlines-frame .hl:before, .claro #headlines-frame .cdm:before {
+.claro #headlines-frame .hl:before,
+.claro #headlines-frame .cdm:before {
   content: "";
   display: block;
   position: absolute;
@@ -1222,10 +1273,12 @@ img[src="images/plugin.png"] {
   left: 0;
   height: 100%;
   width: 1px;
-  background-color: rgba(0, 0, 0, 0); }
+  background-color: transparent; }
 
 /* single article header */
-.claro #headlines-frame .hl, .claro #headlines-frame .cdm .cdmHeader, .claro #floatingTitle {
+.claro #headlines-frame .hl,
+.claro #headlines-frame .cdm .cdmHeader,
+.claro #floatingTitle {
   display: table;
   background: #f5f5f5;
   /* header - all child items */
@@ -1235,57 +1288,116 @@ img[src="images/plugin.png"] {
   /* header - article update time */
   /* header - score */
   /* header - feed icon */ }
-  .claro #headlines-frame .hl > *, .claro #headlines-frame .hl > .hlUpdated > *, .claro #headlines-frame .cdm .cdmHeader > *, .claro #headlines-frame .cdm .cdmHeader > .hlUpdated > *, .claro #floatingTitle > *, .claro #floatingTitle > .hlUpdated > * {
+  .claro #headlines-frame .hl > *,
+  .claro #headlines-frame .hl > .hlUpdated > *,
+  .claro #headlines-frame .cdm .cdmHeader > *,
+  .claro #headlines-frame .cdm .cdmHeader > .hlUpdated > *,
+  .claro #floatingTitle > *,
+  .claro #floatingTitle > .hlUpdated > * {
     display: table-cell;
     vertical-align: middle;
     padding: 4px;
     white-space: nowrap; }
-  .claro #headlines-frame .hl > div:first-child > *, .claro #headlines-frame .cdm .cdmHeader > div:first-child > *, .claro #floatingTitle > div:first-child > * {
+  .claro #headlines-frame .hl > div:first-child > *,
+  .claro #headlines-frame .cdm .cdmHeader > div:first-child > *,
+  .claro #floatingTitle > div:first-child > * {
     margin: 0 2px;
     vertical-align: middle; }
-  .claro #headlines-frame .hl > div:first-child > img, .claro #headlines-frame .cdm .cdmHeader > div:first-child > img, .claro #floatingTitle > div:first-child > img {
+  .claro #headlines-frame .hl > div:first-child > img,
+  .claro #headlines-frame .cdm .cdmHeader > div:first-child > img,
+  .claro #floatingTitle > div:first-child > img {
     display: inline;
     cursor: pointer; }
-  .claro #headlines-frame .hl > div:first-child > div, .claro #headlines-frame .cdm .cdmHeader > div:first-child > div, .claro #floatingTitle > div:first-child > div {
+  .claro #headlines-frame .hl > div:first-child > div,
+  .claro #headlines-frame .cdm .cdmHeader > div:first-child > div,
+  .claro #floatingTitle > div:first-child > div {
     display: inline-block; }
-  .claro #headlines-frame .hl .titleWrap, .claro #headlines-frame .hl .hlTitle, .claro #headlines-frame .cdm .cdmHeader .titleWrap, .claro #headlines-frame .cdm .cdmHeader .hlTitle, .claro #floatingTitle .titleWrap, .claro #floatingTitle .hlTitle {
+  .claro #headlines-frame .hl .titleWrap,
+  .claro #headlines-frame .hl .hlTitle,
+  .claro #headlines-frame .cdm .cdmHeader .titleWrap,
+  .claro #headlines-frame .cdm .cdmHeader .hlTitle,
+  .claro #floatingTitle .titleWrap,
+  .claro #floatingTitle .hlTitle {
     max-width: 0;
     width: 100%;
     overflow: hidden; }
-    .claro #headlines-frame .hl .titleWrap > a, .claro #headlines-frame .hl .titleWrap > .hlContent > a, .claro #headlines-frame .hl .hlTitle > a, .claro #headlines-frame .hl .hlTitle > .hlContent > a, .claro #headlines-frame .cdm .cdmHeader .titleWrap > a, .claro #headlines-frame .cdm .cdmHeader .titleWrap > .hlContent > a, .claro #headlines-frame .cdm .cdmHeader .hlTitle > a, .claro #headlines-frame .cdm .cdmHeader .hlTitle > .hlContent > a, .claro #floatingTitle .titleWrap > a, .claro #floatingTitle .titleWrap > .hlContent > a, .claro #floatingTitle .hlTitle > a, .claro #floatingTitle .hlTitle > .hlContent > a {
+    .claro #headlines-frame .hl .titleWrap > a,
+    .claro #headlines-frame .hl .titleWrap > .hlContent > a,
+    .claro #headlines-frame .hl .hlTitle > a,
+    .claro #headlines-frame .hl .hlTitle > .hlContent > a,
+    .claro #headlines-frame .cdm .cdmHeader .titleWrap > a,
+    .claro #headlines-frame .cdm .cdmHeader .titleWrap > .hlContent > a,
+    .claro #headlines-frame .cdm .cdmHeader .hlTitle > a,
+    .claro #headlines-frame .cdm .cdmHeader .hlTitle > .hlContent > a,
+    .claro #floatingTitle .titleWrap > a,
+    .claro #floatingTitle .titleWrap > .hlContent > a,
+    .claro #floatingTitle .hlTitle > a,
+    .claro #floatingTitle .hlTitle > .hlContent > a {
       text-decoration: none;
       color: #333; }
-    .claro #headlines-frame .hl .titleWrap > span.author, .claro #headlines-frame .hl .hlTitle > span.author, .claro #headlines-frame .cdm .cdmHeader .titleWrap > span.author, .claro #headlines-frame .cdm .cdmHeader .hlTitle > span.author, .claro #floatingTitle .titleWrap > span.author, .claro #floatingTitle .hlTitle > span.author {
+    .claro #headlines-frame .hl .titleWrap > span.author,
+    .claro #headlines-frame .hl .hlTitle > span.author,
+    .claro #headlines-frame .cdm .cdmHeader .titleWrap > span.author,
+    .claro #headlines-frame .cdm .cdmHeader .hlTitle > span.author,
+    .claro #floatingTitle .titleWrap > span.author,
+    .claro #floatingTitle .hlTitle > span.author {
       color: #777; }
-    .claro #headlines-frame .hl .titleWrap .collapseBtn img, .claro #headlines-frame .hl .hlTitle .collapseBtn img, .claro #headlines-frame .cdm .cdmHeader .titleWrap .collapseBtn img, .claro #headlines-frame .cdm .cdmHeader .hlTitle .collapseBtn img, .claro #floatingTitle .titleWrap .collapseBtn img, .claro #floatingTitle .hlTitle .collapseBtn img {
+    .claro #headlines-frame .hl .titleWrap .collapseBtn img,
+    .claro #headlines-frame .hl .hlTitle .collapseBtn img,
+    .claro #headlines-frame .cdm .cdmHeader .titleWrap .collapseBtn img,
+    .claro #headlines-frame .cdm .cdmHeader .hlTitle .collapseBtn img,
+    .claro #floatingTitle .titleWrap .collapseBtn img,
+    .claro #floatingTitle .hlTitle .collapseBtn img {
       vertical-align: middle; }
-  .claro #headlines-frame .hl .hlFeed a, .claro #headlines-frame .hl a.hlFeed, .claro #headlines-frame .cdm .cdmHeader .hlFeed a, .claro #headlines-frame .cdm .cdmHeader a.hlFeed, .claro #floatingTitle .hlFeed a, .claro #floatingTitle a.hlFeed {
+  .claro #headlines-frame .hl .hlFeed a,
+  .claro #headlines-frame .hl a.hlFeed,
+  .claro #headlines-frame .cdm .cdmHeader .hlFeed a,
+  .claro #headlines-frame .cdm .cdmHeader a.hlFeed,
+  .claro #floatingTitle .hlFeed a,
+  .claro #floatingTitle a.hlFeed {
     text-decoration: none;
     border: 1px solid #d8d8d8;
     background: #fff !important;
     color: #777;
     font-size: 10px;
     padding: 2px 8px; }
-    .claro #headlines-frame .hl .hlFeed a:hover, .claro #headlines-frame .hl a.hlFeed:hover, .claro #headlines-frame .cdm .cdmHeader .hlFeed a:hover, .claro #headlines-frame .cdm .cdmHeader a.hlFeed:hover, .claro #floatingTitle .hlFeed a:hover, .claro #floatingTitle a.hlFeed:hover {
+    .claro #headlines-frame .hl .hlFeed a:hover,
+    .claro #headlines-frame .hl a.hlFeed:hover,
+    .claro #headlines-frame .cdm .cdmHeader .hlFeed a:hover,
+    .claro #headlines-frame .cdm .cdmHeader a.hlFeed:hover,
+    .claro #floatingTitle .hlFeed a:hover,
+    .claro #floatingTitle a.hlFeed:hover {
       border: 1px solid #dd4b39;
       color: #dd4b39; }
-  .claro #headlines-frame .hl .updated, .claro #headlines-frame .hl .hlUpdated, .claro #headlines-frame .cdm .cdmHeader .updated, .claro #headlines-frame .cdm .cdmHeader .hlUpdated, .claro #floatingTitle .updated, .claro #floatingTitle .hlUpdated {
+  .claro #headlines-frame .hl .updated,
+  .claro #headlines-frame .hl .hlUpdated,
+  .claro #headlines-frame .cdm .cdmHeader .updated,
+  .claro #headlines-frame .cdm .cdmHeader .hlUpdated,
+  .claro #floatingTitle .updated,
+  .claro #floatingTitle .hlUpdated {
     float: right;
     color: #777; }
-  .claro #headlines-frame .hl .scoreWrap img.hlScorePic, .claro #headlines-frame .cdm .cdmHeader .scoreWrap img.hlScorePic, .claro #floatingTitle .scoreWrap img.hlScorePic {
+  .claro #headlines-frame .hl .scoreWrap img.hlScorePic,
+  .claro #headlines-frame .cdm .cdmHeader .scoreWrap img.hlScorePic,
+  .claro #floatingTitle .scoreWrap img.hlScorePic {
     display: block; }
-  .claro #headlines-frame .hl .tinyFeedIcon, .claro #headlines-frame .cdm .cdmHeader .tinyFeedIcon, .claro #floatingTitle .tinyFeedIcon {
+  .claro #headlines-frame .hl .tinyFeedIcon,
+  .claro #headlines-frame .cdm .cdmHeader .tinyFeedIcon,
+  .claro #floatingTitle .tinyFeedIcon {
     display: none; }
 
 /* unread header */
-.claro #headlines-frame .hl.Unread, .claro #headlines-frame .cdm.Unread .cdmHeader {
+.claro #headlines-frame .hl.Unread,
+.claro #headlines-frame .cdm.Unread .cdmHeader {
   background: #fff; }
-  .claro #headlines-frame .hl.Unread .titleWrap > a, .claro #headlines-frame .cdm.Unread .cdmHeader .titleWrap > a {
+  .claro #headlines-frame .hl.Unread .titleWrap > a,
+  .claro #headlines-frame .cdm.Unread .cdmHeader .titleWrap > a {
     color: #333;
     font-weight: bold; }
 
 /* active header */
-.claro #headlines-frame .hl.active .hlContent > a, .claro #headlines-frame .cdm.active .cdmHeader .titleWrap > a {
+.claro #headlines-frame .hl.active .hlContent > a,
+.claro #headlines-frame .cdm.active .cdmHeader .titleWrap > a {
   font-weight: bold;
   color: #dd4b39; }
 
@@ -1306,7 +1418,10 @@ img[src="images/plugin.png"] {
     font-weight: bold; }
 
 /* article content */
-.claro .cdm.active .cdmContent .cdmContentInner, .claro .cdm.expanded .cdmContent .cdmContentInner {
+.claro .cdm.active .cdmContent .cdmContentInner,
+.claro .cdm.expanded .cdmContent .cdmContentInner,
+.claro .cdm.active .cdmContent .cdmIntermediate,
+.claro .cdm.expanded .cdmContent .cdmIntermediate {
   display: block;
   padding: 0 8px 0 71px;
   max-width: 700px;
@@ -1315,34 +1430,70 @@ img[src="images/plugin.png"] {
   /* images (except of main) and vides*/
   /* tables */
   /* first and last child not a p-element need padding */ }
-  .claro .cdm.active .cdmContent .cdmContentInner img, .claro .cdm.expanded .cdmContent .cdmContentInner img {
+  .claro .cdm.active .cdmContent .cdmContentInner img,
+  .claro .cdm.expanded .cdmContent .cdmContentInner img,
+  .claro .cdm.active .cdmContent .cdmIntermediate img,
+  .claro .cdm.expanded .cdmContent .cdmIntermediate img {
     max-width: 700px; }
-  .claro .cdm.active .cdmContent .cdmContentInner p > img, .claro .cdm.active .cdmContent .cdmContentInner p > a:not([href*="feedburner"]) > img, .claro .cdm.active .cdmContent .cdmContentInner div > img, .claro .cdm.active .cdmContent .cdmContentInner div > a:not([href*="feedburner"]) > img, .claro .cdm.active .cdmContent .cdmContentInner p iframe, .claro .cdm.expanded .cdmContent .cdmContentInner p > img, .claro .cdm.expanded .cdmContent .cdmContentInner p > a:not([href*="feedburner"]) > img, .claro .cdm.expanded .cdmContent .cdmContentInner div > img, .claro .cdm.expanded .cdmContent .cdmContentInner div > a:not([href*="feedburner"]) > img, .claro .cdm.expanded .cdmContent .cdmContentInner p iframe {
+  .claro .cdm.active .cdmContent .cdmContentInner p > img,
+  .claro .cdm.active .cdmContent .cdmContentInner p > a:not([href*="feedburner"]) > img,
+  .claro .cdm.active .cdmContent .cdmContentInner div > img,
+  .claro .cdm.active .cdmContent .cdmContentInner div > a:not([href*="feedburner"]) > img,
+  .claro .cdm.active .cdmContent .cdmContentInner p iframe,
+  .claro .cdm.expanded .cdmContent .cdmContentInner p > img,
+  .claro .cdm.expanded .cdmContent .cdmContentInner p > a:not([href*="feedburner"]) > img,
+  .claro .cdm.expanded .cdmContent .cdmContentInner div > img,
+  .claro .cdm.expanded .cdmContent .cdmContentInner div > a:not([href*="feedburner"]) > img,
+  .claro .cdm.expanded .cdmContent .cdmContentInner p iframe,
+  .claro .cdm.active .cdmContent .cdmIntermediate p > img,
+  .claro .cdm.active .cdmContent .cdmIntermediate p > a:not([href*="feedburner"]) > img,
+  .claro .cdm.active .cdmContent .cdmIntermediate div > img,
+  .claro .cdm.active .cdmContent .cdmIntermediate div > a:not([href*="feedburner"]) > img,
+  .claro .cdm.active .cdmContent .cdmIntermediate p iframe,
+  .claro .cdm.expanded .cdmContent .cdmIntermediate p > img,
+  .claro .cdm.expanded .cdmContent .cdmIntermediate p > a:not([href*="feedburner"]) > img,
+  .claro .cdm.expanded .cdmContent .cdmIntermediate div > img,
+  .claro .cdm.expanded .cdmContent .cdmIntermediate div > a:not([href*="feedburner"]) > img,
+  .claro .cdm.expanded .cdmContent .cdmIntermediate p iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center; }
-  .claro .cdm.active .cdmContent .cdmContentInner p > img, .claro .cdm.expanded .cdmContent .cdmContentInner p > img {
+  .claro .cdm.active .cdmContent .cdmContentInner p > img,
+  .claro .cdm.expanded .cdmContent .cdmContentInner p > img,
+  .claro .cdm.active .cdmContent .cdmIntermediate p > img,
+  .claro .cdm.expanded .cdmContent .cdmIntermediate p > img {
     display: inline-block;
     height: auto;
     margin-right: 8px;
     max-width: 100%;
     max-height: 550px;
     width: auto; }
-  .claro .cdm.active .cdmContent .cdmContentInner table, .claro .cdm.expanded .cdmContent .cdmContentInner table {
+  .claro .cdm.active .cdmContent .cdmContentInner table,
+  .claro .cdm.expanded .cdmContent .cdmContentInner table,
+  .claro .cdm.active .cdmContent .cdmIntermediate table,
+  .claro .cdm.expanded .cdmContent .cdmIntermediate table {
     margin-left: auto;
     margin-right: auto;
     width: auto; }
-  .claro .cdm.active .cdmContent .cdmContentInner > span > span > *:not(p):first-child, .claro .cdm.expanded .cdmContent .cdmContentInner > span > span > *:not(p):first-child {
+  .claro .cdm.active .cdmContent .cdmContentInner > span > span > *:not(p):first-child,
+  .claro .cdm.expanded .cdmContent .cdmContentInner > span > span > *:not(p):first-child,
+  .claro .cdm.active .cdmContent .cdmIntermediate > span > span > *:not(p):first-child,
+  .claro .cdm.expanded .cdmContent .cdmIntermediate > span > span > *:not(p):first-child {
     padding-top: 8px; }
-  .claro .cdm.active .cdmContent .cdmContentInner > span > span > *:not(p):last-child, .claro .cdm.expanded .cdmContent .cdmContentInner > span > span > *:not(p):last-child {
+  .claro .cdm.active .cdmContent .cdmContentInner > span > span > *:not(p):last-child,
+  .claro .cdm.expanded .cdmContent .cdmContentInner > span > span > *:not(p):last-child,
+  .claro .cdm.active .cdmContent .cdmIntermediate > span > span > *:not(p):last-child,
+  .claro .cdm.expanded .cdmContent .cdmIntermediate > span > span > *:not(p):last-child {
     padding-bottom: 8px; }
 
 /* article footer */
-.claro .cdm.active .cdmContent .cdmFooter, .claro .cdm.expanded .cdmContent .cdmFooter {
+.claro .cdm.active .cdmContent .cdmFooter,
+.claro .cdm.expanded .cdmContent .cdmFooter {
   padding: 4px 8px;
   background-color: #f5f5f5; }
-  .claro .cdm.active .cdmContent .cdmFooter > *, .claro .cdm.expanded .cdmContent .cdmFooter > * {
+  .claro .cdm.active .cdmContent .cdmFooter > *,
+  .claro .cdm.expanded .cdmContent .cdmFooter > * {
     vertical-align: middle; }
 
 /* article content in non combined display mode */
@@ -1375,7 +1526,8 @@ img[src="images/plugin.png"] {
   *  File Created:  2013-08-29
 **/
 /* resets */
-.claro #collapse_feeds_btn, .claro #collapse_feeds_btn_label {
+.claro #collapse_feeds_btn,
+.claro #collapse_feeds_btn_label {
   margin: 0 ;
   padding: 0 ;
   border-width: 0 ; }
@@ -1385,7 +1537,7 @@ img[src="images/plugin.png"] {
   display: inline-block !important; }
   .claro span[widgetid="collapse_feeds_btn"] > span:before {
     display: inline-block;
-    content: "\f104\f104";
+    content: "";
     font-family: 'FontAwesome' !important;
     font-weight: normal;
     font-variant: normal;
@@ -1403,7 +1555,7 @@ img[src="images/plugin.png"] {
 /* collapse feeds button (when hidden) */
 #header-wrap[style*="left: 0px;"] span[widgetid="collapse_feeds_btn"] > span:before {
   display: inline-block;
-  content: "\f105\f105";
+  content: "";
   font-family: 'FontAwesome' !important;
   font-weight: normal;
   font-variant: normal;
@@ -1415,7 +1567,12 @@ img[src="images/plugin.png"] {
   line-height: 16px; }
 
 /* disable hover effects and sizing */
-.claro .dijitToolbar .dijitComboButtonHover .dijitButtonNodeHover, .claro .dijitToolbar .dijitComboButtonHover .dijitDownArrowButtonHover, .claro .dijitToolbar .dijitButtonHover .dijitButtonNode, .claro .dijitToolbar .dijitDropDownButtonHover .dijitButtonNode, .claro .dijitToolbar .dijitToggleButtonHover .dijitButtonNode, .claro .dijitToolbar .dijitComboButtonHover .dijitButtonNode, .claro .dijitSelectLabel, .claro .dijitTextBox .dijitInputInner, .claro .dijitSelect.dijitValidationTextBox .dijitValidationContainer, .claro .dijitSelect .dijitInputField, .claro .dijitTextBox .dijitInputField, .claro .dijitToolbar .dijitButton .dijitButtonNode, .claro .dijitToolbar .dijitDropDownButton .dijitButtonNode, .claro .dijitToolbar .dijitComboButton .dijitButtonNode, .claro .dijitToolbar .dijitToggleButton .dijitButtonNode, .claro .dijitToolbar .dijitComboBox .dijitButtonNode, .dijitToolbar .dijitButtonContents {
+.claro .dijitToolbar .dijitComboButtonHover .dijitButtonNodeHover, .claro .dijitToolbar .dijitComboButtonHover .dijitDownArrowButtonHover,
+.claro .dijitToolbar .dijitButtonHover .dijitButtonNode, .claro .dijitToolbar .dijitDropDownButtonHover .dijitButtonNode, .claro .dijitToolbar .dijitToggleButtonHover .dijitButtonNode, .claro .dijitToolbar .dijitComboButtonHover .dijitButtonNode,
+.claro .dijitSelectLabel, .claro .dijitTextBox .dijitInputInner, .claro .dijitSelect.dijitValidationTextBox .dijitValidationContainer,
+.claro .dijitSelect .dijitInputField, .claro .dijitTextBox .dijitInputField,
+.claro .dijitToolbar .dijitButton .dijitButtonNode, .claro .dijitToolbar .dijitDropDownButton .dijitButtonNode, .claro .dijitToolbar .dijitComboButton .dijitButtonNode, .claro .dijitToolbar .dijitToggleButton .dijitButtonNode, .claro .dijitToolbar .dijitComboBox .dijitButtonNode,
+.dijitToolbar .dijitButtonContents {
   -webkit-transition: none;
   transition: none;
   background: transparent;
@@ -1426,7 +1583,10 @@ img[src="images/plugin.png"] {
 /************
   * BUTTONS *
   ************/
-.claro .dijitButton, .claro .dijitSelect.dijitValidationTextBox, .claro .dijitComboButton, .claro .dijitDropDownButton {
+.claro .dijitButton,
+.claro .dijitSelect.dijitValidationTextBox,
+.claro .dijitComboButton,
+.claro .dijitDropDownButton {
   background: #f5f5f5;
   border: 1px solid #d8d8d8;
   padding: 0;
@@ -1435,76 +1595,214 @@ img[src="images/plugin.png"] {
   transition: all 0.25s ease-in-out;
   -webkit-transition-delay: 0s;
   transition-delay: 0s; }
-  .claro .dijitButton:hover, .claro .dijitSelect.dijitValidationTextBox:hover, .claro .dijitComboButton:hover, .claro .dijitDropDownButton:hover {
+  .claro .dijitButton:hover,
+  .claro .dijitSelect.dijitValidationTextBox:hover,
+  .claro .dijitComboButton:hover,
+  .claro .dijitDropDownButton:hover {
     background: #fff; }
-  .claro .dijitButton > span.dijitButtonNode, .claro .dijitButton td.dijitButtonNode, .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonNode, .claro .dijitSelect.dijitValidationTextBox td.dijitButtonNode, .claro .dijitComboButton > span.dijitButtonNode, .claro .dijitComboButton td.dijitButtonNode, .claro .dijitDropDownButton > span.dijitButtonNode, .claro .dijitDropDownButton td.dijitButtonNode {
+  .claro .dijitButton > span.dijitButtonNode,
+  .claro .dijitButton td.dijitButtonNode,
+  .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonNode,
+  .claro .dijitSelect.dijitValidationTextBox td.dijitButtonNode,
+  .claro .dijitComboButton > span.dijitButtonNode,
+  .claro .dijitComboButton td.dijitButtonNode,
+  .claro .dijitDropDownButton > span.dijitButtonNode,
+  .claro .dijitDropDownButton td.dijitButtonNode {
     background-image: none;
     background-color: transparent;
     border: 0px solid transparent;
     padding: 0;
     box-shadow: none; }
-  .claro .dijitButton > span.dijitButtonNode > span.dijitButtonContents, .claro .dijitButton td.dijitButtonContents, .claro .dijitButton td.dijitButtonNode div.dijitButtonContents, .claro .dijitButton > span.dijitButtonText, .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonNode > span.dijitButtonContents, .claro .dijitSelect.dijitValidationTextBox td.dijitButtonContents, .claro .dijitSelect.dijitValidationTextBox td.dijitButtonNode div.dijitButtonContents, .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonText, .claro .dijitComboButton > span.dijitButtonNode > span.dijitButtonContents, .claro .dijitComboButton td.dijitButtonContents, .claro .dijitComboButton td.dijitButtonNode div.dijitButtonContents, .claro .dijitComboButton > span.dijitButtonText, .claro .dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents, .claro .dijitDropDownButton td.dijitButtonContents, .claro .dijitDropDownButton td.dijitButtonNode div.dijitButtonContents, .claro .dijitDropDownButton > span.dijitButtonText {
+  .claro .dijitButton > span.dijitButtonNode > span.dijitButtonContents,
+  .claro .dijitButton td.dijitButtonContents,
+  .claro .dijitButton td.dijitButtonNode div.dijitButtonContents,
+  .claro .dijitButton > span.dijitButtonText,
+  .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonNode > span.dijitButtonContents,
+  .claro .dijitSelect.dijitValidationTextBox td.dijitButtonContents,
+  .claro .dijitSelect.dijitValidationTextBox td.dijitButtonNode div.dijitButtonContents,
+  .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonText,
+  .claro .dijitComboButton > span.dijitButtonNode > span.dijitButtonContents,
+  .claro .dijitComboButton td.dijitButtonContents,
+  .claro .dijitComboButton td.dijitButtonNode div.dijitButtonContents,
+  .claro .dijitComboButton > span.dijitButtonText,
+  .claro .dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents,
+  .claro .dijitDropDownButton td.dijitButtonContents,
+  .claro .dijitDropDownButton td.dijitButtonNode div.dijitButtonContents,
+  .claro .dijitDropDownButton > span.dijitButtonText {
     -webkit-transition: none;
     background: transparent;
     border: none;
     padding: 4px 2px 4px 8px;
     height: 16px; }
-    .claro .dijitButton > span.dijitButtonNode > span.dijitButtonContents.dijitButtonContentsHover, .claro .dijitButton td.dijitButtonContents.dijitButtonContentsHover, .claro .dijitButton td.dijitButtonNode div.dijitButtonContents.dijitButtonContentsHover, .claro .dijitButton > span.dijitButtonText.dijitButtonContentsHover, .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonNode > span.dijitButtonContents.dijitButtonContentsHover, .claro .dijitSelect.dijitValidationTextBox td.dijitButtonContents.dijitButtonContentsHover, .claro .dijitSelect.dijitValidationTextBox td.dijitButtonNode div.dijitButtonContents.dijitButtonContentsHover, .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonText.dijitButtonContentsHover, .claro .dijitComboButton > span.dijitButtonNode > span.dijitButtonContents.dijitButtonContentsHover, .claro .dijitComboButton td.dijitButtonContents.dijitButtonContentsHover, .claro .dijitComboButton td.dijitButtonNode div.dijitButtonContents.dijitButtonContentsHover, .claro .dijitComboButton > span.dijitButtonText.dijitButtonContentsHover, .claro .dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents.dijitButtonContentsHover, .claro .dijitDropDownButton td.dijitButtonContents.dijitButtonContentsHover, .claro .dijitDropDownButton td.dijitButtonNode div.dijitButtonContents.dijitButtonContentsHover, .claro .dijitDropDownButton > span.dijitButtonText.dijitButtonContentsHover {
+    .claro .dijitButton > span.dijitButtonNode > span.dijitButtonContents.dijitButtonContentsHover,
+    .claro .dijitButton td.dijitButtonContents.dijitButtonContentsHover,
+    .claro .dijitButton td.dijitButtonNode div.dijitButtonContents.dijitButtonContentsHover,
+    .claro .dijitButton > span.dijitButtonText.dijitButtonContentsHover,
+    .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonNode > span.dijitButtonContents.dijitButtonContentsHover,
+    .claro .dijitSelect.dijitValidationTextBox td.dijitButtonContents.dijitButtonContentsHover,
+    .claro .dijitSelect.dijitValidationTextBox td.dijitButtonNode div.dijitButtonContents.dijitButtonContentsHover,
+    .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonText.dijitButtonContentsHover,
+    .claro .dijitComboButton > span.dijitButtonNode > span.dijitButtonContents.dijitButtonContentsHover,
+    .claro .dijitComboButton td.dijitButtonContents.dijitButtonContentsHover,
+    .claro .dijitComboButton td.dijitButtonNode div.dijitButtonContents.dijitButtonContentsHover,
+    .claro .dijitComboButton > span.dijitButtonText.dijitButtonContentsHover,
+    .claro .dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents.dijitButtonContentsHover,
+    .claro .dijitDropDownButton td.dijitButtonContents.dijitButtonContentsHover,
+    .claro .dijitDropDownButton td.dijitButtonNode div.dijitButtonContents.dijitButtonContentsHover,
+    .claro .dijitDropDownButton > span.dijitButtonText.dijitButtonContentsHover {
       -webkit-transition: none;
       background: transparent; }
-    .claro .dijitButton > span.dijitButtonNode > span.dijitButtonContents .dijitButtonText, .claro .dijitButton td.dijitButtonContents .dijitButtonText, .claro .dijitButton td.dijitButtonNode div.dijitButtonContents .dijitButtonText, .claro .dijitButton > span.dijitButtonText .dijitButtonText, .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonNode > span.dijitButtonContents .dijitButtonText, .claro .dijitSelect.dijitValidationTextBox td.dijitButtonContents .dijitButtonText, .claro .dijitSelect.dijitValidationTextBox td.dijitButtonNode div.dijitButtonContents .dijitButtonText, .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonText .dijitButtonText, .claro .dijitComboButton > span.dijitButtonNode > span.dijitButtonContents .dijitButtonText, .claro .dijitComboButton td.dijitButtonContents .dijitButtonText, .claro .dijitComboButton td.dijitButtonNode div.dijitButtonContents .dijitButtonText, .claro .dijitComboButton > span.dijitButtonText .dijitButtonText, .claro .dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents .dijitButtonText, .claro .dijitDropDownButton td.dijitButtonContents .dijitButtonText, .claro .dijitDropDownButton td.dijitButtonNode div.dijitButtonContents .dijitButtonText, .claro .dijitDropDownButton > span.dijitButtonText .dijitButtonText {
+    .claro .dijitButton > span.dijitButtonNode > span.dijitButtonContents .dijitButtonText,
+    .claro .dijitButton td.dijitButtonContents .dijitButtonText,
+    .claro .dijitButton td.dijitButtonNode div.dijitButtonContents .dijitButtonText,
+    .claro .dijitButton > span.dijitButtonText .dijitButtonText,
+    .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonNode > span.dijitButtonContents .dijitButtonText,
+    .claro .dijitSelect.dijitValidationTextBox td.dijitButtonContents .dijitButtonText,
+    .claro .dijitSelect.dijitValidationTextBox td.dijitButtonNode div.dijitButtonContents .dijitButtonText,
+    .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonText .dijitButtonText,
+    .claro .dijitComboButton > span.dijitButtonNode > span.dijitButtonContents .dijitButtonText,
+    .claro .dijitComboButton td.dijitButtonContents .dijitButtonText,
+    .claro .dijitComboButton td.dijitButtonNode div.dijitButtonContents .dijitButtonText,
+    .claro .dijitComboButton > span.dijitButtonText .dijitButtonText,
+    .claro .dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents .dijitButtonText,
+    .claro .dijitDropDownButton td.dijitButtonContents .dijitButtonText,
+    .claro .dijitDropDownButton td.dijitButtonNode div.dijitButtonContents .dijitButtonText,
+    .claro .dijitDropDownButton > span.dijitButtonText .dijitButtonText {
       padding: 0;
       color: #333;
       font-weight: bold; }
-      .claro .dijitButton > span.dijitButtonNode > span.dijitButtonContents .dijitButtonText .dijitSelectLabel, .claro .dijitButton td.dijitButtonContents .dijitButtonText .dijitSelectLabel, .claro .dijitButton td.dijitButtonNode div.dijitButtonContents .dijitButtonText .dijitSelectLabel, .claro .dijitButton > span.dijitButtonText .dijitButtonText .dijitSelectLabel, .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonNode > span.dijitButtonContents .dijitButtonText .dijitSelectLabel, .claro .dijitSelect.dijitValidationTextBox td.dijitButtonContents .dijitButtonText .dijitSelectLabel, .claro .dijitSelect.dijitValidationTextBox td.dijitButtonNode div.dijitButtonContents .dijitButtonText .dijitSelectLabel, .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonText .dijitButtonText .dijitSelectLabel, .claro .dijitComboButton > span.dijitButtonNode > span.dijitButtonContents .dijitButtonText .dijitSelectLabel, .claro .dijitComboButton td.dijitButtonContents .dijitButtonText .dijitSelectLabel, .claro .dijitComboButton td.dijitButtonNode div.dijitButtonContents .dijitButtonText .dijitSelectLabel, .claro .dijitComboButton > span.dijitButtonText .dijitButtonText .dijitSelectLabel, .claro .dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents .dijitButtonText .dijitSelectLabel, .claro .dijitDropDownButton td.dijitButtonContents .dijitButtonText .dijitSelectLabel, .claro .dijitDropDownButton td.dijitButtonNode div.dijitButtonContents .dijitButtonText .dijitSelectLabel, .claro .dijitDropDownButton > span.dijitButtonText .dijitButtonText .dijitSelectLabel {
+      .claro .dijitButton > span.dijitButtonNode > span.dijitButtonContents .dijitButtonText .dijitSelectLabel,
+      .claro .dijitButton td.dijitButtonContents .dijitButtonText .dijitSelectLabel,
+      .claro .dijitButton td.dijitButtonNode div.dijitButtonContents .dijitButtonText .dijitSelectLabel,
+      .claro .dijitButton > span.dijitButtonText .dijitButtonText .dijitSelectLabel,
+      .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonNode > span.dijitButtonContents .dijitButtonText .dijitSelectLabel,
+      .claro .dijitSelect.dijitValidationTextBox td.dijitButtonContents .dijitButtonText .dijitSelectLabel,
+      .claro .dijitSelect.dijitValidationTextBox td.dijitButtonNode div.dijitButtonContents .dijitButtonText .dijitSelectLabel,
+      .claro .dijitSelect.dijitValidationTextBox > span.dijitButtonText .dijitButtonText .dijitSelectLabel,
+      .claro .dijitComboButton > span.dijitButtonNode > span.dijitButtonContents .dijitButtonText .dijitSelectLabel,
+      .claro .dijitComboButton td.dijitButtonContents .dijitButtonText .dijitSelectLabel,
+      .claro .dijitComboButton td.dijitButtonNode div.dijitButtonContents .dijitButtonText .dijitSelectLabel,
+      .claro .dijitComboButton > span.dijitButtonText .dijitButtonText .dijitSelectLabel,
+      .claro .dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents .dijitButtonText .dijitSelectLabel,
+      .claro .dijitDropDownButton td.dijitButtonContents .dijitButtonText .dijitSelectLabel,
+      .claro .dijitDropDownButton td.dijitButtonNode div.dijitButtonContents .dijitButtonText .dijitSelectLabel,
+      .claro .dijitDropDownButton > span.dijitButtonText .dijitButtonText .dijitSelectLabel {
         padding: 0; }
-  .claro .dijitButton:not(.dijitDropDownButton) > span.dijitButtonNode > span.dijitButtonContents, .claro .dijitButton > .dijitButtonNode:before, .claro .dijitSelect.dijitValidationTextBox:not(.dijitDropDownButton) > span.dijitButtonNode > span.dijitButtonContents, .claro .dijitSelect.dijitValidationTextBox > .dijitButtonNode:before, .claro .dijitComboButton:not(.dijitDropDownButton) > span.dijitButtonNode > span.dijitButtonContents, .claro .dijitComboButton > .dijitButtonNode:before, .claro .dijitDropDownButton:not(.dijitDropDownButton) > span.dijitButtonNode > span.dijitButtonContents, .claro .dijitDropDownButton > .dijitButtonNode:before {
+  .claro .dijitButton:not(.dijitDropDownButton) > span.dijitButtonNode > span.dijitButtonContents,
+  .claro .dijitButton > .dijitButtonNode:before,
+  .claro .dijitSelect.dijitValidationTextBox:not(.dijitDropDownButton) > span.dijitButtonNode > span.dijitButtonContents,
+  .claro .dijitSelect.dijitValidationTextBox > .dijitButtonNode:before,
+  .claro .dijitComboButton:not(.dijitDropDownButton) > span.dijitButtonNode > span.dijitButtonContents,
+  .claro .dijitComboButton > .dijitButtonNode:before,
+  .claro .dijitDropDownButton:not(.dijitDropDownButton) > span.dijitButtonNode > span.dijitButtonContents,
+  .claro .dijitDropDownButton > .dijitButtonNode:before {
     padding: 4px 8px; }
-  .claro .dijitButton.dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents, .claro .dijitSelect.dijitValidationTextBox.dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents, .claro .dijitComboButton.dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents, .claro .dijitDropDownButton.dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents {
+  .claro .dijitButton.dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents,
+  .claro .dijitSelect.dijitValidationTextBox.dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents,
+  .claro .dijitComboButton.dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents,
+  .claro .dijitDropDownButton.dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents {
     height: auto;
     padding: 0; }
-    .claro .dijitButton.dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents > .dijitButtonText, .claro .dijitSelect.dijitValidationTextBox.dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents > .dijitButtonText, .claro .dijitComboButton.dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents > .dijitButtonText, .claro .dijitDropDownButton.dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents > .dijitButtonText {
+    .claro .dijitButton.dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents > .dijitButtonText,
+    .claro .dijitSelect.dijitValidationTextBox.dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents > .dijitButtonText,
+    .claro .dijitComboButton.dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents > .dijitButtonText,
+    .claro .dijitDropDownButton.dijitDropDownButton > span.dijitButtonNode > span.dijitButtonContents > .dijitButtonText {
       padding: 4px 2px 4px 8px;
       height: 16px; }
-  .claro .dijitButton span.dijitButtonText, .claro .dijitSelect.dijitValidationTextBox span.dijitButtonText, .claro .dijitComboButton span.dijitButtonText, .claro .dijitDropDownButton span.dijitButtonText {
+  .claro .dijitButton span.dijitButtonText,
+  .claro .dijitSelect.dijitValidationTextBox span.dijitButtonText,
+  .claro .dijitComboButton span.dijitButtonText,
+  .claro .dijitDropDownButton span.dijitButtonText {
     color: #333;
     font-weight: bold; }
-  .claro .dijitButton .dijitButtonNode.dijitArrowButton, .claro .dijitButton span.dijitArrowButtonInner, .claro .dijitSelect.dijitValidationTextBox .dijitButtonNode.dijitArrowButton, .claro .dijitSelect.dijitValidationTextBox span.dijitArrowButtonInner, .claro .dijitComboButton .dijitButtonNode.dijitArrowButton, .claro .dijitComboButton span.dijitArrowButtonInner, .claro .dijitDropDownButton .dijitButtonNode.dijitArrowButton, .claro .dijitDropDownButton span.dijitArrowButtonInner {
+  .claro .dijitButton .dijitButtonNode.dijitArrowButton,
+  .claro .dijitButton span.dijitArrowButtonInner,
+  .claro .dijitSelect.dijitValidationTextBox .dijitButtonNode.dijitArrowButton,
+  .claro .dijitSelect.dijitValidationTextBox span.dijitArrowButtonInner,
+  .claro .dijitComboButton .dijitButtonNode.dijitArrowButton,
+  .claro .dijitComboButton span.dijitArrowButtonInner,
+  .claro .dijitDropDownButton .dijitButtonNode.dijitArrowButton,
+  .claro .dijitDropDownButton span.dijitArrowButtonInner {
     -webkit-transition: none;
     background: transparent;
     border: none;
     padding: 4px 8px 4px 2px; }
-    .claro .dijitButton .dijitButtonNode.dijitArrowButton input.dijitArrowButtonInner, .claro .dijitButton .dijitButtonNode.dijitArrowButton div.dijitArrowButtonInner, .claro .dijitButton .dijitButtonNode.dijitArrowButton.dijitArrowButtonInner, .claro .dijitButton span.dijitArrowButtonInner input.dijitArrowButtonInner, .claro .dijitButton span.dijitArrowButtonInner div.dijitArrowButtonInner, .claro .dijitButton span.dijitArrowButtonInner.dijitArrowButtonInner, .claro .dijitSelect.dijitValidationTextBox .dijitButtonNode.dijitArrowButton input.dijitArrowButtonInner, .claro .dijitSelect.dijitValidationTextBox .dijitButtonNode.dijitArrowButton div.dijitArrowButtonInner, .claro .dijitSelect.dijitValidationTextBox .dijitButtonNode.dijitArrowButton.dijitArrowButtonInner, .claro .dijitSelect.dijitValidationTextBox span.dijitArrowButtonInner input.dijitArrowButtonInner, .claro .dijitSelect.dijitValidationTextBox span.dijitArrowButtonInner div.dijitArrowButtonInner, .claro .dijitSelect.dijitValidationTextBox span.dijitArrowButtonInner.dijitArrowButtonInner, .claro .dijitComboButton .dijitButtonNode.dijitArrowButton input.dijitArrowButtonInner, .claro .dijitComboButton .dijitButtonNode.dijitArrowButton div.dijitArrowButtonInner, .claro .dijitComboButton .dijitButtonNode.dijitArrowButton.dijitArrowButtonInner, .claro .dijitComboButton span.dijitArrowButtonInner input.dijitArrowButtonInner, .claro .dijitComboButton span.dijitArrowButtonInner div.dijitArrowButtonInner, .claro .dijitComboButton span.dijitArrowButtonInner.dijitArrowButtonInner, .claro .dijitDropDownButton .dijitButtonNode.dijitArrowButton input.dijitArrowButtonInner, .claro .dijitDropDownButton .dijitButtonNode.dijitArrowButton div.dijitArrowButtonInner, .claro .dijitDropDownButton .dijitButtonNode.dijitArrowButton.dijitArrowButtonInner, .claro .dijitDropDownButton span.dijitArrowButtonInner input.dijitArrowButtonInner, .claro .dijitDropDownButton span.dijitArrowButtonInner div.dijitArrowButtonInner, .claro .dijitDropDownButton span.dijitArrowButtonInner.dijitArrowButtonInner {
+    .claro .dijitButton .dijitButtonNode.dijitArrowButton input.dijitArrowButtonInner,
+    .claro .dijitButton .dijitButtonNode.dijitArrowButton div.dijitArrowButtonInner, .claro .dijitButton .dijitButtonNode.dijitArrowButton.dijitArrowButtonInner,
+    .claro .dijitButton span.dijitArrowButtonInner input.dijitArrowButtonInner,
+    .claro .dijitButton span.dijitArrowButtonInner div.dijitArrowButtonInner,
+    .claro .dijitButton span.dijitArrowButtonInner.dijitArrowButtonInner,
+    .claro .dijitSelect.dijitValidationTextBox .dijitButtonNode.dijitArrowButton input.dijitArrowButtonInner,
+    .claro .dijitSelect.dijitValidationTextBox .dijitButtonNode.dijitArrowButton div.dijitArrowButtonInner,
+    .claro .dijitSelect.dijitValidationTextBox .dijitButtonNode.dijitArrowButton.dijitArrowButtonInner,
+    .claro .dijitSelect.dijitValidationTextBox span.dijitArrowButtonInner input.dijitArrowButtonInner,
+    .claro .dijitSelect.dijitValidationTextBox span.dijitArrowButtonInner div.dijitArrowButtonInner,
+    .claro .dijitSelect.dijitValidationTextBox span.dijitArrowButtonInner.dijitArrowButtonInner,
+    .claro .dijitComboButton .dijitButtonNode.dijitArrowButton input.dijitArrowButtonInner,
+    .claro .dijitComboButton .dijitButtonNode.dijitArrowButton div.dijitArrowButtonInner,
+    .claro .dijitComboButton .dijitButtonNode.dijitArrowButton.dijitArrowButtonInner,
+    .claro .dijitComboButton span.dijitArrowButtonInner input.dijitArrowButtonInner,
+    .claro .dijitComboButton span.dijitArrowButtonInner div.dijitArrowButtonInner,
+    .claro .dijitComboButton span.dijitArrowButtonInner.dijitArrowButtonInner,
+    .claro .dijitDropDownButton .dijitButtonNode.dijitArrowButton input.dijitArrowButtonInner,
+    .claro .dijitDropDownButton .dijitButtonNode.dijitArrowButton div.dijitArrowButtonInner,
+    .claro .dijitDropDownButton .dijitButtonNode.dijitArrowButton.dijitArrowButtonInner,
+    .claro .dijitDropDownButton span.dijitArrowButtonInner input.dijitArrowButtonInner,
+    .claro .dijitDropDownButton span.dijitArrowButtonInner div.dijitArrowButtonInner,
+    .claro .dijitDropDownButton span.dijitArrowButtonInner.dijitArrowButtonInner {
       background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTUyIiBoZWlnaHQ9IjE3OTIiIHZpZXdCb3g9IjAgMCAxMTUyIDE3OTIiIHN0eWxlPSJtYXJnaW4tbGVmdDogM3B4OyBtYXJnaW4tdG9wOiAxcHg7Ij48cGF0aCBkPSJNIDEwNzUsNzM2cTAsMTMgLTEwLDIzbC00NjYsNDY2cS0xMCwxMCAtMjMsMTB0LTIzLTEwbC00NjYtNDY2cS0xMC0xMCAtMTAtMjN0IDEwLTIzbCA1MC01MHEgMTAtMTAgMjMtMTB0IDIzLDEwbCAzOTMsMzkzbCAzOTMtMzkzcSAxMC0xMCAyMy0xMHQgMjMsMTBsIDUwLDUwcSAxMCwxMCAxMCwyM3oiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMDc1IDAuMDA3NSkiPjwvcGF0aD48L3N2Zz4K");
       background-position: 0 0;
       height: 14px;
       width: 14px; }
-    .claro .dijitButton .dijitButtonNode.dijitArrowButton.dijitArrowButtonInner, .claro .dijitButton span.dijitArrowButtonInner.dijitArrowButtonInner, .claro .dijitSelect.dijitValidationTextBox .dijitButtonNode.dijitArrowButton.dijitArrowButtonInner, .claro .dijitSelect.dijitValidationTextBox span.dijitArrowButtonInner.dijitArrowButtonInner, .claro .dijitComboButton .dijitButtonNode.dijitArrowButton.dijitArrowButtonInner, .claro .dijitComboButton span.dijitArrowButtonInner.dijitArrowButtonInner, .claro .dijitDropDownButton .dijitButtonNode.dijitArrowButton.dijitArrowButtonInner, .claro .dijitDropDownButton span.dijitArrowButtonInner.dijitArrowButtonInner {
+    .claro .dijitButton .dijitButtonNode.dijitArrowButton.dijitArrowButtonInner,
+    .claro .dijitButton span.dijitArrowButtonInner.dijitArrowButtonInner,
+    .claro .dijitSelect.dijitValidationTextBox .dijitButtonNode.dijitArrowButton.dijitArrowButtonInner,
+    .claro .dijitSelect.dijitValidationTextBox span.dijitArrowButtonInner.dijitArrowButtonInner,
+    .claro .dijitComboButton .dijitButtonNode.dijitArrowButton.dijitArrowButtonInner,
+    .claro .dijitComboButton span.dijitArrowButtonInner.dijitArrowButtonInner,
+    .claro .dijitDropDownButton .dijitButtonNode.dijitArrowButton.dijitArrowButtonInner,
+    .claro .dijitDropDownButton span.dijitArrowButtonInner.dijitArrowButtonInner {
       background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTUyIiBoZWlnaHQ9IjE3OTIiIHZpZXdCb3g9IjAgMCAxMTUyIDE3OTIiIHN0eWxlPSJtYXJnaW4tbGVmdDogM3B4OyBtYXJnaW4tdG9wOiAxcHg7Ij48cGF0aCBkPSJNIDEwNzUsNzM2cTAsMTMgLTEwLDIzbC00NjYsNDY2cS0xMCwxMCAtMjMsMTB0LTIzLTEwbC00NjYtNDY2cS0xMC0xMCAtMTAtMjN0IDEwLTIzbCA1MC01MHEgMTAtMTAgMjMtMTB0IDIzLDEwbCAzOTMsMzkzbCAzOTMtMzkzcSAxMC0xMCAyMy0xMHQgMjMsMTBsIDUwLDUwcSAxMCwxMCAxMCwyM3oiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMDc1IDAuMDA3NSkiPjwvcGF0aD48L3N2Zz4K");
       background-position: 2px 4px; }
 
 /**************
   * COMBO BOX *
   **************/
-.claro .dijitSelect.dijitComboBox .dijitInputField, .claro .dijitSelect .dijitButtonContents, .claro .dijitComboBox.dijitComboBox .dijitInputField, .claro .dijitComboBox .dijitButtonContents {
+.claro .dijitSelect.dijitComboBox .dijitInputField,
+.claro .dijitSelect .dijitButtonContents,
+.claro .dijitComboBox.dijitComboBox .dijitInputField,
+.claro .dijitComboBox .dijitButtonContents {
   border: 0 solid transparent; }
-.claro .dijitSelect:not(.dijitComboBox) .dijitButtonContents, .claro .dijitSelect.dijitComboBox .dijitInputInner, .claro .dijitComboBox:not(.dijitComboBox) .dijitButtonContents, .claro .dijitComboBox.dijitComboBox .dijitInputInner {
+.claro .dijitSelect:not(.dijitComboBox) .dijitButtonContents, .claro .dijitSelect.dijitComboBox .dijitInputInner,
+.claro .dijitComboBox:not(.dijitComboBox) .dijitButtonContents,
+.claro .dijitComboBox.dijitComboBox .dijitInputInner {
   padding: 4px 2px 4px 8px !important; }
-.claro .dijitSelect .dijitArrowButtonContainer, .claro .dijitComboBox .dijitArrowButtonContainer {
+.claro .dijitSelect .dijitArrowButtonContainer,
+.claro .dijitComboBox .dijitArrowButtonContainer {
   border: 0 solid transparent;
   background-image: none;
   background: transparent;
   padding: 4px 8px 4px 2px; }
-.claro .dijitSelect input.dijitArrowButtonInner, .claro .dijitComboBox input.dijitArrowButtonInner {
+.claro .dijitSelect input.dijitArrowButtonInner,
+.claro .dijitComboBox input.dijitArrowButtonInner {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTUyIiBoZWlnaHQ9IjE3OTIiIHZpZXdCb3g9IjAgMCAxMTUyIDE3OTIiIHN0eWxlPSJtYXJnaW4tbGVmdDogM3B4OyBtYXJnaW4tdG9wOiAxcHg7Ij48cGF0aCBkPSJNIDEwNzUsNzM2cTAsMTMgLTEwLDIzbC00NjYsNDY2cS0xMCwxMCAtMjMsMTB0LTIzLTEwbC00NjYtNDY2cS0xMC0xMCAtMTAtMjN0IDEwLTIzbCA1MC01MHEgMTAtMTAgMjMtMTB0IDIzLDEwbCAzOTMsMzkzbCAzOTMtMzkzcSAxMC0xMCAyMy0xMHQgMjMsMTBsIDUwLDUwcSAxMCwxMCAxMCwyM3oiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMDc1IDAuMDA3NSkiPjwvcGF0aD48L3N2Zz4K");
   background-position: 0 0;
   height: 16px !important;
   width: 16px; }
-.claro .dijitSelect:not(.dijitComboBox).dijitHasDropDownOpen, .claro .dijitComboBox:not(.dijitComboBox).dijitHasDropDownOpen {
+.claro .dijitSelect:not(.dijitComboBox).dijitHasDropDownOpen,
+.claro .dijitComboBox:not(.dijitComboBox).dijitHasDropDownOpen {
   padding: 0; }
-.claro .dijitSelect.dijitSelectFocused .dijitArrowButton, .claro .dijitSelect:not(.dijitComboBox).dijitSelectFocused .dijitArrowButton, .claro .dijitComboBox.dijitSelectFocused .dijitArrowButton, .claro .dijitComboBox:not(.dijitComboBox).dijitSelectFocused .dijitArrowButton {
+.claro .dijitSelect.dijitSelectFocused .dijitArrowButton, .claro .dijitSelect:not(.dijitComboBox).dijitSelectFocused .dijitArrowButton,
+.claro .dijitComboBox.dijitSelectFocused .dijitArrowButton,
+.claro .dijitComboBox:not(.dijitComboBox).dijitSelectFocused .dijitArrowButton {
   padding: 4px 8px 4px 2px; }
-.claro .dijitSelect.dijitSelectFocused .dijitArrowButton .dijitArrowButtonInner, .claro .dijitSelect.dijitSelectHover .dijitArrowButton .dijitArrowButtonInner, .claro .dijitSelect .dijitDownArrowButtonHover .dijitArrowButtonInner, .claro .dijitSelect .dijitHasDropDownOpen .dijitArrowButtonInner, .claro .dijitComboBox.dijitSelectFocused .dijitArrowButton .dijitArrowButtonInner, .claro .dijitComboBox.dijitSelectHover .dijitArrowButton .dijitArrowButtonInner, .claro .dijitComboBox .dijitDownArrowButtonHover .dijitArrowButtonInner, .claro .dijitComboBox .dijitHasDropDownOpen .dijitArrowButtonInner {
+.claro .dijitSelect.dijitSelectFocused .dijitArrowButton .dijitArrowButtonInner, .claro .dijitSelect.dijitSelectHover .dijitArrowButton .dijitArrowButtonInner,
+.claro .dijitSelect .dijitDownArrowButtonHover .dijitArrowButtonInner,
+.claro .dijitSelect .dijitHasDropDownOpen .dijitArrowButtonInner,
+.claro .dijitComboBox.dijitSelectFocused .dijitArrowButton .dijitArrowButtonInner,
+.claro .dijitComboBox.dijitSelectHover .dijitArrowButton .dijitArrowButtonInner,
+.claro .dijitComboBox .dijitDownArrowButtonHover .dijitArrowButtonInner,
+.claro .dijitComboBox .dijitHasDropDownOpen .dijitArrowButtonInner {
   background-position: 0 0; }
 
 /********************
@@ -1521,7 +1819,8 @@ img[src="images/plugin.png"] {
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent; }
 
-.claro .dijitPopup.dijitMenuPopup, .claro .dijitPopup.dijitComboBoxMenuPopup {
+.claro .dijitPopup.dijitMenuPopup,
+.claro .dijitPopup.dijitComboBoxMenuPopup {
   -moz-box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 4px 0px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 4px 0px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 4px 0px; }
@@ -1563,11 +1862,15 @@ img[src="images/plugin.png"] {
 /***********
   * INPUTS *
   ***********/
-.claro .dijitSelect, .claro .dijitTextBox {
+.claro .dijitSelect,
+.claro .dijitTextBox {
   border: 1px solid #d8d8d8; }
-  .claro .dijitSelect:not(.dijitComboBox), .claro .dijitTextBox:not(.dijitComboBox) {
+  .claro .dijitSelect:not(.dijitComboBox),
+  .claro .dijitTextBox:not(.dijitComboBox) {
     padding: 4px 8px; }
-  .claro .dijitSelect.dijitSelectHover, .claro .dijitSelect.dijitTextBoxHover, .claro .dijitTextBox.dijitSelectHover, .claro .dijitTextBox.dijitTextBoxHover {
+  .claro .dijitSelect.dijitSelectHover, .claro .dijitSelect.dijitTextBoxHover,
+  .claro .dijitTextBox.dijitSelectHover,
+  .claro .dijitTextBox.dijitTextBoxHover {
     background: #f5f5f5; }
 
 /**
@@ -1755,7 +2058,8 @@ hr {
 /* custom css dialog */
 #cssEditDlg .dijitDialogPaneContent > table {
   margin: 8px 0; }
-#cssEditDlg .dijitDialogPaneContent > table, #cssEditDlg .dijitDialogPaneContent > table textarea {
+#cssEditDlg .dijitDialogPaneContent > table,
+#cssEditDlg .dijitDialogPaneContent > table textarea {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
