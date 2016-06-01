@@ -8,7 +8,7 @@
   *  File Created:  2013-08-29
 **/
 
-.claro .notify.notify_progress {
+.notify, .notify_progress {
   display: none;
   position: fixed;
   top: $notify-width / 10;

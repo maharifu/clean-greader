@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
   *  File:         main.scss
   **************************
@@ -1941,7 +1942,7 @@ img[src="images/plugin.png"] {
   *  Author:        Sven Flickinger (naeramarth7)
   *  File Created:  2013-08-29
 **/
-.claro .notify.notify_progress {
+.notify, .notify_progress {
   display: none;
   position: fixed;
   top: 32px;
@@ -1957,9 +1958,9 @@ img[src="images/plugin.png"] {
   /* loader */
   /* message */
   /* closer */ }
-  .claro .notify.notify_progress.visible {
+  .notify.visible, .notify_progress.visible {
     display: block; }
-  .claro .notify.notify_progress img[src="images/indicator_white.gif"] {
+  .notify img[src="images/indicator_white.gif"], .notify_progress img[src="images/indicator_white.gif"] {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Ik0gMjU2LjAwLDAuMDAgQyAxMTYuNjI2LDAuMDAgMy4yNzEsMTExLjM4MSAwLjA3NiwyNDkuOTg3IEMgMy4wMzYsMTI5LjA1NSA5NC45OTIsMzIuMDAgMjA4LjAwLDMyLjAwIEMgMzIyLjg3NSwzMi4wMCA0MTYuMDAsMTMyLjI4OCA0MTYuMDAsMjU2LjAwIEMgNDE2LjAwLDI4Mi41MSA0MzcuNDksMzA0LjAwIDQ2NC4wMCwzMDQuMDAgQyA0OTAuNTEsMzA0LjAwIDUxMi4wMCwyODIuNTEgNTEyLjAwLDI1Ni4wMCBDIDUxMi4wMCwxMTQuNjE1IDM5Ny4zODUsMC4wMCAyNTYuMDAsMC4wMCBaTSAyNTYuMDAsNTEyLjAwIEMgMzk1LjM3NCw1MTIuMDAgNTA4LjcyOSw0MDAuNjE5IDUxMS45MjQsMjYyLjAxMyBDIDUwOC45NjQsMzgyLjk0NSA0MTcuMDA4LDQ4MC4wMCAzMDQuMDAsNDgwLjAwIEMgMTg5LjEyNSw0ODAuMDAgOTYuMDAsMzc5LjcxMiA5Ni4wMCwyNTYuMDAgQyA5Ni4wMCwyMjkuNDkgNzQuNTEsMjA4LjAwIDQ4LjAwLDIwOC4wMCBDIDIxLjQ5LDIwOC4wMCAwLjAwLDIyOS40OSAwLjAwLDI1Ni4wMCBDIDAuMDAsMzk3LjM4NSAxMTQuNjE1LDUxMi4wMCAyNTYuMDAsNTEyLjAwIFoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMzEyNSAwLjAzMTI1KSI+PC9wYXRoPgogIDwvZz4KPC9zdmc+");
     position: relative;
     left: 1px;
@@ -1972,13 +1973,13 @@ img[src="images/plugin.png"] {
     opacity: 0.533;
     -webkit-animation: rotation 1s linear infinite;
     animation: rotation 1s linear infinite; }
-  .claro .notify.notify_progress .msg {
+  .notify .msg, .notify_progress .msg {
     padding: 4px 8px;
     font-size: 12px;
     font-weight: bold;
     line-height: 24px;
     color: #dd4b39; }
-  .claro .notify.notify_progress img.close {
+  .notify img.close, .notify_progress img.close {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Ik0gNTA3LjMzMSw0MTEuMzNjLTAuMDAyLTAuMDAyLTAuMDA0LTAuMDA0LTAuMDA2LTAuMDA1TCAzNTIuMDAzLDI1Ni4wMGwgMTU1LjMyMi0xNTUuMzI1YyAwLjAwMi0wLjAwMiwgMC4wMDQtMC4wMDMsIDAuMDA2LTAuMDA1CgkJYyAxLjY3Mi0xLjY3MywgMi44ODEtMy42MjcsIDMuNjU2LTUuNzA4YyAyLjEyMy01LjY4OCwgMC45MTItMTIuMzQxLTMuNjYyLTE2LjkxNUwgNDMzLjk1Miw0LjY3NGMtNC41NzQtNC41NzMtMTEuMjI1LTUuNzgzLTE2LjkxNC0zLjY2CgkJYy0yLjA4LDAuNzc1LTQuMDM1LDEuOTg0LTUuNzA5LDMuNjU1YzAuMDAsMC4wMDItMC4wMDIsMC4wMDMtMC4wMDQsMC4wMDVMIDI1Ni4wMDEsMTYwLjAwTCAxMDAuNjc3LDQuNjc1CgkJYy0wLjAwMi0wLjAwMi0wLjAwMy0wLjAwMy0wLjAwNS0wLjAwNWMtMS42NzMtMS42NzEtMy42MjctMi44OC01LjcwNy0zLjY1NWMtNS42OS0yLjEyNC0xMi4zNDEtMC45MTMtMTYuOTE1LDMuNjZMIDQuNjc2LDc4LjA0OQoJCWMtNC41NzQsNC41NzQtNS43ODQsMTEuMjI2LTMuNjYxLDE2LjkxNGMgMC43NzYsMi4wOCwgMS45ODUsNC4wMzYsIDMuNjU2LDUuNzA4YyAwLjAwMiwwLjAwMSwgMC4wMDMsMC4wMDMsIDAuMDA1LDAuMDA1TCAxNjAuMDAxLDI1Ni4wMAoJCUwgNC42NzYsNDExLjMyNmMtMC4wMDEsMC4wMDItMC4wMDMsMC4wMDMtMC4wMDQsMC4wMDVjLTEuNjcxLDEuNjczLTIuODgsMy42MjctMy42NTcsNS43MDdjLTIuMTI0LDUuNjg4LTAuOTEzLDEyLjM0MSwgMy42NjEsMTYuOTE1CgkJbCA3My4zNzQsNzMuMzczYyA0LjU3NSw0LjU3NCwgMTEuMjI2LDUuNzg0LCAxNi45MTUsMy42NjFjIDIuMDgtMC43NzYsIDQuMDM1LTEuOTg1LCA1LjcwOC0zLjY1NmMgMC4wMDEtMC4wMDIsIDAuMDAzLTAuMDAzLCAwLjAwNS0wLjAwNQoJCWwgMTU1LjMyNC0xNTUuMzI1bCAxNTUuMzI0LDE1NS4zMjVjIDAuMDAyLDAuMDAxLCAwLjAwNCwwLjAwMywgMC4wMDYsMC4wMDRjIDEuNjc0LDEuNjcyLCAzLjYyNywyLjg4MSwgNS43MDcsMy42NTcKCQljIDUuNjg5LDIuMTIzLCAxMi4zNDIsMC45MTMsIDE2LjkxNC0zLjY2MWwgNzMuMzczLTczLjM3NGMgNC41NzQtNC41NzQsIDUuNzg1LTExLjIyNywgMy42NjItMTYuOTE1CgkJQyA1MTAuMjEyLDQxNC45NTcsIDUwOS4wMDMsNDEzLjAwMywgNTA3LjMzMSw0MTEuMzN6IiB0cmFuc2Zvcm09InNjYWxlKDAuMDMxMjUgMC4wMzEyNSkiPjwvcGF0aD4KICA8L2c+Cjwvc3ZnPg==");
     position: relative;
     left: 1px;
@@ -2076,3 +2077,5 @@ hr {
   .helpKbList .hksequence {
     display: inline-block;
     width: 100px; }
+
+/*# sourceMappingURL=main.css.map */
