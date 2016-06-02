@@ -1955,11 +1955,14 @@ img[src="images/plugin.png"] {
   border-width: 1px 1px 2px;
   text-align: center;
   z-index: 10;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
   /* loader */
   /* message */
   /* closer */ }
   .notify.visible, .notify_progress.visible {
-    display: block; }
+    display: flex; }
   .notify img[src="images/indicator_white.gif"], .notify_progress img[src="images/indicator_white.gif"] {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Ik0gMjU2LjAwLDAuMDAgQyAxMTYuNjI2LDAuMDAgMy4yNzEsMTExLjM4MSAwLjA3NiwyNDkuOTg3IEMgMy4wMzYsMTI5LjA1NSA5NC45OTIsMzIuMDAgMjA4LjAwLDMyLjAwIEMgMzIyLjg3NSwzMi4wMCA0MTYuMDAsMTMyLjI4OCA0MTYuMDAsMjU2LjAwIEMgNDE2LjAwLDI4Mi41MSA0MzcuNDksMzA0LjAwIDQ2NC4wMCwzMDQuMDAgQyA0OTAuNTEsMzA0LjAwIDUxMi4wMCwyODIuNTEgNTEyLjAwLDI1Ni4wMCBDIDUxMi4wMCwxMTQuNjE1IDM5Ny4zODUsMC4wMCAyNTYuMDAsMC4wMCBaTSAyNTYuMDAsNTEyLjAwIEMgMzk1LjM3NCw1MTIuMDAgNTA4LjcyOSw0MDAuNjE5IDUxMS45MjQsMjYyLjAxMyBDIDUwOC45NjQsMzgyLjk0NSA0MTcuMDA4LDQ4MC4wMCAzMDQuMDAsNDgwLjAwIEMgMTg5LjEyNSw0ODAuMDAgOTYuMDAsMzc5LjcxMiA5Ni4wMCwyNTYuMDAgQyA5Ni4wMCwyMjkuNDkgNzQuNTEsMjA4LjAwIDQ4LjAwLDIwOC4wMCBDIDIxLjQ5LDIwOC4wMCAwLjAwLDIyOS40OSAwLjAwLDI1Ni4wMCBDIDAuMDAsMzk3LjM4NSAxMTQuNjE1LDUxMi4wMCAyNTYuMDAsNTEyLjAwIFoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMzEyNSAwLjAzMTI1KSI+PC9wYXRoPgogIDwvZz4KPC9zdmc+");
     position: relative;
