@@ -40,7 +40,7 @@
 
 /* tree row */
 .claro .dijitTreeRow {
-  padding: 4px $content-padding * 2;
+  padding: 4px $content-padding * 2 !important;
 
   //     wrapper-width     gap-size         border      padding
   width: $card-nav-width - $card-gap-size - (2 * 1px) - (2 * $content-padding * 2) !important;

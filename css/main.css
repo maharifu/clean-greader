@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
   *  File:         main.scss
   **************************
@@ -916,7 +915,7 @@ img[src="images/plugin.png"] {
 
 /* tree row */
 .claro .dijitTreeRow {
-  padding: 4px 16px;
+  padding: 4px 16px !important;
   width: 274px !important;
   border-width: 0;
   -webkit-transition: all 0.25s ease-in-out;
@@ -2080,5 +2079,3 @@ hr {
   .helpKbList .hksequence {
     display: inline-block;
     width: 100px; }
-
-/*# sourceMappingURL=main.css.map */
